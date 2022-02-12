@@ -1,11 +1,10 @@
-import App from './App';
-import { render } from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import RouteSwitch from './RouteSwitch';
 
-const rootElement = document.getElementById('root');
-render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  rootElement
+ReactDOM.render(
+  <React.StrictMode>
+    <RouteSwitch />
+  </React.StrictMode>,
+  document.getElementById('root')
 );

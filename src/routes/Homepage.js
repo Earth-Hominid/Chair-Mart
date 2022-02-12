@@ -1,12 +1,12 @@
 import Navigation from './components/navigation/Navigation';
 import './styles/styles.css';
 
-function App() {
+function Homepage() {
   return (
     <>
-      <Navigation />
+      <header>Homepage</header>
     </>
   );
 }
 
-export default App;
+export default Homepage;
