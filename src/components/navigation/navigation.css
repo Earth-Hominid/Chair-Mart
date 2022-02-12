@@ -1,0 +1,61 @@
+@media screen and (min-width: 20rem) {
+  #logo {
+    max-width: 8rem;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  #logo {
+    max-width: 8rem;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 30rem) {
+  #logo {
+    max-width: 6rem;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  #logo {
+    max-width: 7rem;
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  #logo {
+    max-width: 8rem;
+    height: auto;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  #logo {
+    max-width: 9rem;
+    height: auto;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  #logo {
+    max-width: 10rem;
+    height: auto;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+}

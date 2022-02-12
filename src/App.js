@@ -1,8 +1,11 @@
+import Navigation from './components/navigation/Navigation';
+import './styles/styles.css';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Hello</header>
-    </div>
+    <>
+      <Navigation />
+    </>
   );
 }
 
