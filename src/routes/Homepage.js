@@ -1,6 +1,3 @@
-import Navigation from './components/navigation/Navigation';
-import './styles/styles.css';
-
 function Homepage() {
   return (
     <>

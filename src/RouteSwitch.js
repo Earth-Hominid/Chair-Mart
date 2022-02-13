@@ -7,12 +7,12 @@ import Landing from './routes/LandingPage';
 import NotFound from './routes/NotFound';
 import WithNav from './WithNav';
 import WithOutNav from './WithOutNav';
-import './styles.css';
+import './styles/styles.css';
 
 const RouteSwitch = () => {
   return (
     <BrowserRouter>
-      <UserCart.Provider>
+      <UserCart.Provider value={UserCart}>
         <Routes>
           <Route element={<WithOutNav />}>
             <Route path="/Checkout" element={<Checkout />} />
@@ -20,8 +20,7 @@ const RouteSwitch = () => {
           <Route element={<WithNav />}>
             <Route path="/" element={<Homepage />} />
             <Route path="/landing" element={<Landing />} />
-
-            <Route path="/ShoppingCart" element={<Cart />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

@@ -1,7 +1,5 @@
-import React from 'react';
-
 const CheckoutPage = () => {
-  return <div>CheckoutPage</div>;
+  return <header>CheckoutPage</header>;
 };
 
 export default CheckoutPage;

@@ -11,3 +11,13 @@ it('renders logo link', () => {
   const linkElement = screen.getByAltText(/chair-mart logo/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+it('renders navigation html tab', () => {
+  render(
+    <BrowserRouter>
+      <Navigation />
+    </BrowserRouter>
+  );
+  const linkElement = screen.getByRole('navigation');
+  expect(linkElement).toBeInTheDocument();
+});

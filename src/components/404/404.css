@@ -1,0 +1,16 @@
+ins {
+  color: #777;
+  text-decoration: none;
+}
+
+.not__found__header {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.not__found__paragraph {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}

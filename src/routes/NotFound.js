@@ -1,7 +1,12 @@
-import React from 'react';
+import NotFoundHeader from '../components/404/NotFoundHeader';
+import '../components/404/404.css';
 
 const NotFound = () => {
-  return <div>NotFound</div>;
+  return (
+    <>
+      <NotFoundHeader />{' '}
+    </>
+  );
 };
 
 export default NotFound;
