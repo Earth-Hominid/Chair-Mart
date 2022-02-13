@@ -21,3 +21,33 @@ it('renders navigation html tab', () => {
   const linkElement = screen.getByRole('navigation');
   expect(linkElement).toBeInTheDocument();
 });
+
+it('renders search icon', () => {
+  render(
+    <BrowserRouter>
+      <Navigation />
+    </BrowserRouter>
+  );
+  const linkElement = screen.getByAltText(/search icon/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+it('renders log-in icon', () => {
+  render(
+    <BrowserRouter>
+      <Navigation />
+    </BrowserRouter>
+  );
+  const linkElement = screen.getByAltText(/log-in/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+it('renders cart link', () => {
+  render(
+    <BrowserRouter>
+      <Navigation />
+    </BrowserRouter>
+  );
+  const linkElement = screen.getByAltText(/shopping cart/i);
+  expect(linkElement).toBeInTheDocument();
+});
