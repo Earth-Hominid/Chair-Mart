@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom';
+import NavLinkBar from './NavLinkBar';
 import Logo from './Logo';
 import './navigation.css';
-import { Link } from 'react-router-dom';
 
 import React from 'react';
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav id="nav">
       <Link to="/">
         <Logo />
       </Link>
+      <NavLinkBar />
     </nav>
   );
 };
