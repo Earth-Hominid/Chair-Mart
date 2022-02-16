@@ -5,5 +5,5 @@ export const CategoryContainer = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 92px;
-  background-color: #f5f459;
+  background-color: #fff4bd;
 `;
