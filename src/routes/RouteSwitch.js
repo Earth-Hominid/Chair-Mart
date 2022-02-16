@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { UserCart } from './UserCart';
-import Homepage from './routes/Homepage';
-import Checkout from './routes/CheckoutPage';
-import Cart from './routes/CartPage';
-import Landing from './routes/LandingPage';
-import NotFound from './routes/NotFound';
-import WithNav from './WithNav';
-import WithOutNav from './WithOutNav';
-import './styles/styles.css';
+import { UserCart } from '../context/UserCart';
+import Homepage from './Homepage';
+import Checkout from './CheckoutPage';
+import Cart from './CartPage';
+import Landing from './LandingPage';
+import NotFound from './NotFound';
+import WithNav from '../outlet/WithNav';
+import WithOutNav from '../outlet/WithOutNav';
+import '../styles/styles.css';
 
 const RouteSwitch = () => {
   return (

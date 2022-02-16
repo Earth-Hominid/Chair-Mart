@@ -63,13 +63,15 @@
 nav {
   display: flex;
   width: 100%;
+  max-height: 9.375rem;
+  align-items: center;
   justify-content: space-between;
   white-space: nowrap;
-  align-items: center;
 }
 
 .nav__bar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-right: 3.813rem;
 }
