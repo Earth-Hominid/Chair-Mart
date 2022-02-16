@@ -7,6 +7,14 @@ import {
   PromotionIndent,
   PromotionHeadline,
   PromotionalPrice,
+  LeftPromoImage,
+  PromotionMiddle,
+  HeroPromo,
+  HeroLargeText,
+  HeroSmallText,
+  RightPromoImage,
+  PromotionRightSquare,
+  PromotionRightHeadline,
 } from './Styles';
 
 const HeroHome = () => {
@@ -19,25 +27,25 @@ const HeroHome = () => {
               <PromotionHeadline>Office Chairs from</PromotionHeadline>
               <PromotionalPrice>$100</PromotionalPrice>
             </PromotionIndent>
-            <img src={ProductOne} id="left-promo-img" alt="Green Chair" />
+            <LeftPromoImage src={ProductOne} alt="Green Chair" />
           </PromotionLeftSquare>
-          <div className="promo-middle">
-            <div className="hero-promo">
-              <h2 className="hero-large-text">2 great furniture sales!</h2>
-              <h3 className="hero-small-text">Sale ends in 2 days </h3>
-            </div>
-          </div>
-          <div className="promo-right-square">
-            <div className="promo-indent">
-              <div className="promo-headline">
-                <h2 className="promo-right-headline">
+          <PromotionMiddle>
+            <HeroPromo>
+              <HeroLargeText>2 great furniture sales!</HeroLargeText>
+              <HeroSmallText>Sale ends in 2 days </HeroSmallText>
+            </HeroPromo>
+          </PromotionMiddle>
+          <PromotionRightSquare>
+            <PromotionIndent>
+              <PromotionHeadline>
+                <PromotionRightHeadline>
                   Sofas & sectionals from
-                </h2>
-                <div className="promo-price">$200 </div>
-              </div>
-            </div>
-            <img src={ProductTwo} id="right-promo-img" alt="Sofa" />
-          </div>
+                </PromotionRightHeadline>
+                <PromotionalPrice>$200 </PromotionalPrice>
+              </PromotionHeadline>
+            </PromotionIndent>
+            <RightPromoImage src={ProductTwo} alt="Sofa" />
+          </PromotionRightSquare>
         </PromotionContainer>
       </Hero>
     </section>
