@@ -1,6 +1,8 @@
+import { CategoryBox } from './styles/CategoryBox.styled';
+
 const Department = ({ department }) => {
   return (
-    <div className="drop-box" id="new-in">
+    <CategoryBox>
       <img
         src={department.image}
         key={department.id}
@@ -8,7 +10,7 @@ const Department = ({ department }) => {
         alt={department.name}
       />
       <span>{department.name}</span>
-    </div>
+    </CategoryBox>
   );
 };
 
