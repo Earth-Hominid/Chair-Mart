@@ -1,9 +1,9 @@
-import { CategoryBox } from './styles/CategoryBox.styled';
+import { CategoryBox, DepartmentIcon } from './Styles';
 
 const Department = ({ department }) => {
   return (
     <CategoryBox>
-      <img
+      <DepartmentIcon
         src={department.image}
         key={department.id}
         className="drop-icon"

@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import Department from './Department';
-import { CategoryList } from './styles/CategoryList.styled';
+import { CategoryList } from './Styles';
 
 const Departments = ({ departments }) => {
   return (

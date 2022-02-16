@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const CategoryContainer = styled.div`
+export const Hero = styled.div`
   display: flex;
   align-items: center;
+  min-height: 320px;
+  background-color: #fff7f0;
   justify-content: center;
-  min-height: 92px;
-  background-color: #fff4bd;
 `;

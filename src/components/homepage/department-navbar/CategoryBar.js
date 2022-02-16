@@ -1,6 +1,5 @@
-import categoryIcons from '../../utils/categoryIcons';
-import { CategoryContainer } from './styles/CategoryContainer.styled';
-import { CategoryList } from './styles/CategoryList.styled';
+import categoryIcons from '../../../utils/categoryIcons';
+import { CategoryContainer } from './Styles';
 import Departments from './Departments';
 
 const departmentIcons = categoryIcons;

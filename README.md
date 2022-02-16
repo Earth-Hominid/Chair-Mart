@@ -8,6 +8,12 @@ An online furniture store featuring a shopping-cart. The website is built with R
 
 The live version can be found here:
 
+## Features
+
+- Written with modern React, functional components with hooks
+- Simple React state managment, (no usage of redux, mobx etc)
+- Simple project structure, easy to understand
+
 ## Testing
 
 Learned: React-Router 6 relies on React context to work, thus, when testing components that use Router components (such as Link, Route,useNavigate etc.), you need to wrap your test component in one of the Router components.
