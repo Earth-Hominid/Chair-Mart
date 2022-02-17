@@ -92,9 +92,21 @@ export const TextContainer = styled.div`
     margin: 0;
     max-width: 30rem;
     margin-left: 4rem;
+    margin-right: 2rem;
+    max-width: 25rem;
   }
   @media (min-width: 75rem) {
-    margin: 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-left: 0;
+    min-width: 30rem;
+  }
+  @media (min-width: 90rem) {
+    margin-right: 6rem;
+    margin-top: 0;
+    margin-left: 0;
+    min-width: 30rem;
   }
 `;
 
@@ -158,9 +170,6 @@ export const HeroParagraph = styled.p`
     letter-spacing: 0px;
     opacity: 1;
     margin-bottom: 1.5rem;
-  }
-  @media (min-width: 75rem) {
-    font-size: 1.375rem;
   }
 `;
 
