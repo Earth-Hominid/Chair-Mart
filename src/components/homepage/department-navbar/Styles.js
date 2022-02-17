@@ -14,7 +14,7 @@ export const CategoryContainer = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 92px;
-  background-color: #fff4bd;
+  background-color: #f4b9b8;
 `;
 
 export const CategoryList = styled.ul`

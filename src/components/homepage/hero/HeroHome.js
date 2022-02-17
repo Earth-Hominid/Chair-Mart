@@ -14,7 +14,6 @@ import {
   HeroSmallText,
   RightPromoImage,
   PromotionRightSquare,
-  PromotionRightHeadline,
 } from './Styles';
 
 const HeroHome = () => {
@@ -37,12 +36,8 @@ const HeroHome = () => {
           </PromotionMiddle>
           <PromotionRightSquare>
             <PromotionIndent>
-              <PromotionHeadline>
-                <PromotionRightHeadline>
-                  Sofas & sectionals from
-                </PromotionRightHeadline>
-                <PromotionalPrice>$200 </PromotionalPrice>
-              </PromotionHeadline>
+              <PromotionHeadline>Sofas & sectionals from</PromotionHeadline>
+              <PromotionalPrice>$200 </PromotionalPrice>
             </PromotionIndent>
             <RightPromoImage src={ProductTwo} alt="Sofa" />
           </PromotionRightSquare>

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Hero = styled.div`
   display: flex;
   align-items: center;
-  min-height: 320px;
-  background-color: #ffe0c3;
+  min-height: 20rem;
+  background-color: #FAE8E0;
   justify-content: center;
   }
 `;
@@ -15,20 +15,56 @@ export const PromotionContainer = styled.div`
   justify-content: center;
   min-height: 15rem;
   max-width: 79.5rem;
+  @media (max-width: 48rem) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 `;
 
 export const PromotionLeftSquare = styled.div`
-  background-color: #fff4bd;
+  background-color: #ffe0c3;
   opacity: 1;
   border-radius: 6px;
-  min-height: 15rem;
   max-width: 25rem;
   display: flex;
   justify-content: space-around;
-  @media (max-width: 48rem) {
-    flex-direction: column;
+  @media (min-width: 1rem) {
     background-color: #f4b9b8;
-    border-radius: 0px;
+    margin-top: 1.5rem;
+  }
+  @media (min-width: 48rem) {
+    background-color: #f4b9b8;
+    margin: 1rem;
+  }
+  @media (min-width: 65.5rem) {
+    background-color: #f4b9b8;
+    margin: 1rem;
+    min-width: 25rem;
+  }
+`;
+
+export const PromotionRightSquare = styled.div`
+  background-color: #ffe0c3;
+  opacity: 1;
+  max-width: 25rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  @media (min-width: 20rem) {
+    background-color: #f4b9b8;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (min-width: 48rem) {
+    background-color: #f4b9b8;
+    margin: 1rem;
+  }
+  @media (min-width: 65.5rem) {
+    background-color: #f4b9b8;
+    margin: 1rem;
+    min-width: 25rem;
   }
 `;
 
@@ -42,10 +78,6 @@ export const PromotionHeadline = styled.h2`
   text-align: left;
   line-height: 1.75rem;
   margin-left: min(1.5rem);
-  @media (max-width: 48rem) {
-    text-align: center;
-    margin: 0;
-  }
 `;
 
 export const PromotionalPrice = styled.div`
@@ -58,20 +90,21 @@ export const PromotionalPrice = styled.div`
   color: #000000;
   opacity: 1;
   margin-top: 0.3em;
-  margin-left: min(24px);
-  @media (max-width: 48rem) {
-    text-align: center;
-    margin: 0;
-  }
+  margin-left: min(1.5rem);
 `;
 
 export const LeftPromoImage = styled.img`
-  max-width: 13.25rem;
-  max-height: 15rem;
+  min-width: 13.25rem;
+  min-height: 15rem;
   padding-right: 0.938rem;
   @media (max-width: 48rem) {
     padding: 0;
   }
+`;
+export const RightPromoImage = styled.img`
+  min-width: 13.25rem;
+  min-height: 15rem;
+  overflow: hidden;
 `;
 
 export const PromotionMiddle = styled.div`
@@ -80,12 +113,24 @@ export const PromotionMiddle = styled.div`
   align-items: center;
   justify-content: center;
   background: #fff7f0 0% 0% no-repeat padding-box;
-  border: 3px solid #ff7b54;
+  border: 3px solid #ef7c8e;
   opacity: 1;
-  min-width: 25rem;
+  min-width: 20rem;
   min-height: 10rem;
-  @media (max-width: 64rem) {
+  @media (min-width: 1rem) {
     display: none;
+  }
+  @media (min-width: 65.5rem) {
+    display: flex;
+    min-width: 15rem;
+  }
+  @media (min-width: 67.188rem) {
+    display: flex;
+    min-width: 17rem;
+  }
+  @media (min-width: 75rem) {
+    display: flex;
+    min-width: 25rem;
   }
 `;
 
@@ -112,32 +157,4 @@ export const HeroSmallText = styled.h3`
   font-family: Muli-Regular;
   font-size: 1em;
   line-height: 1.313em;
-`;
-
-export const RightPromoImage = styled.img`
-  max-width: 13.25rem;
-  max-height: 15rem;
-  overflow: hidden;
-`;
-
-export const PromotionRightSquare = styled.div`
-  background-color: #ffe0c3;
-  opacity: 1;
-  min-height: 240px;
-  max-width: 400px;
-  display: flex;
-  justify-content: space-around;
-  @media (max-width: 48rem) {
-    flex-direction: column;
-    background-color: #f4b9b8;
-    border-radius: 0px;
-  }
-`;
-
-export const PromotionRightHeadline = styled.h2`
-  font-family: Muli-Regular;
-  font-size: 1.375rem;
-  text-align: left;
-  line-height: 1.75rem;
-  margin-left: min(24px);
 `;
