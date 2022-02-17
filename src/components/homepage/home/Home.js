@@ -4,6 +4,9 @@ import HeroHome from '../hero/HeroHome.js';
 import Showcase from '../department-showcase/Showcase';
 import chairProducts from '../../../utils/chairProducts';
 import OfficeFeature from '../office-feature/OfficeFeature';
+import BedroomFeature from '../bedroom-feature/BedroomFeature';
+import KitchenFeature from '../kitchen-feature/KitchenFeature';
+import Footer from '../../footer/Footer';
 
 const Home = () => {
   const [newIn, setNewIn] = useState([]);
@@ -45,6 +48,9 @@ const Home = () => {
         backward={handleBackwardClick}
       />
       <OfficeFeature />
+      <BedroomFeature />
+      <KitchenFeature />
+      <Footer />
     </>
   );
 };
