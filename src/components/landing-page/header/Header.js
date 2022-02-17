@@ -1,14 +1,12 @@
-import { ProductShowcase } from './Styles';
+import { ProductShowcase, HeadlineContainer, Headline } from './Styles';
 
 const PageHeader = () => {
   return (
     <section>
       <ProductShowcase>
-        <div className="div-headline">
-          <h3 className="page__info__headline">
-            {`Homepage > Room > Home Office`}
-          </h3>
-        </div>
+        <HeadlineContainer>
+          <Headline>{`Homepage > Room > Home Office`}</Headline>
+        </HeadlineContainer>
       </ProductShowcase>
     </section>
   );
