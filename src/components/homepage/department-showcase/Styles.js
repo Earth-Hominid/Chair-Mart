@@ -4,7 +4,7 @@ export const ProductShowcase = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6.875rem;
+  min-height: 6.875rem;
 `;
 
 export const Headline = styled.div`
@@ -44,7 +44,6 @@ export const ShowcaseCarousel = styled.div`
   justify-content: space-evenly;
   margin-left: 3.688rem;
   margin-right: 3.688rem;
-  max-height: 22.813rem;
 `;
 
 export const ProductContainer = styled.div`
