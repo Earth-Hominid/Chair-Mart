@@ -12,9 +12,12 @@ export const ProductShowcase = styled.div`
 export const HeadlineContainer = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-left: 3.688rem;
+  margin-left: 2rem;
   font-size: 1.375rem;
   font-family: Muli-Bold;
+  @media (min-width: 20rem) {
+    margin-left: 1rem;
+  }
 `;
 
 export const Headline = styled.h2`

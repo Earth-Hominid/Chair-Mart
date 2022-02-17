@@ -64,6 +64,9 @@ export const HeroImage = styled.img`
     max-width: 30rem;
   }
   @media (min-width: 75rem) {
+    max-width: 35rem;
+  }
+  @media (min-width: 80rem) {
     max-width: 40rem;
   }
 `;
@@ -112,13 +115,13 @@ export const TextContainer = styled.div`
 
 export const HeroHeadline = styled.h1`
   @media (min-width: 1rem) {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-family: Muli-Bold;
     text-align: left;
     margin-left: 0.5rem;
   }
   @media (min-width: 37.5rem) {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
   @media (min-width: 48rem) {
     margin: 0;
@@ -148,12 +151,12 @@ export const HeroParagraph = styled.p`
     margin-left: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     font-family: Muli-Regular;
   }
   @media (min-width: 37.5rem) {
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
   @media (min-width: 48rem) {
