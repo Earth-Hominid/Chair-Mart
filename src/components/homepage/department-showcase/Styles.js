@@ -48,13 +48,9 @@ export const ShowcaseCarousel = styled.div`
 `;
 
 export const ProductContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 1rem;
-  max-width: 18.375rem;
-  max-height: 22.813rem;
+  padding: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 `;
 
 export const ProductBackground = styled.div`
@@ -62,16 +58,20 @@ export const ProductBackground = styled.div`
   justify-content: center;
   align-items: center;
   background: #efefef;
-  opacity: 1;
-  height: 18.375rem;
-  width: 18.375rem;
   border-radius: 5px;
+  height: 15.563rem;
+  width: 15.563rem;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
 `;
 
 export const ShowcaseImage = styled.img`
-  width: 15rem;
+  width: auto;
   height: 15rem;
-  padding: 1.688rem;
+  padding: 0.3rem;
 `;
 
 export const ProductName = styled.h2`
