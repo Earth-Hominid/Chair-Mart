@@ -169,3 +169,12 @@ export const FeatureImage = styled.img`
     max-width: 40rem;
   }
 `;
+
+export const KitchenImage = styled.img`
+  margin-top: 3rem;
+  width: 100%;
+  @media (min-width: 48rem) {
+    min-height: 20rem;
+    width: 100%;
+  }
+`;
