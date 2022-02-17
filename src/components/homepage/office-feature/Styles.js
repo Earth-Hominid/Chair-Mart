@@ -8,7 +8,7 @@ export const Display = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  @media (min-width: 20rem) {
+  @media (min-width: 37.5rem) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,8 @@ export const Display = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   @media (min-width: 65.5rem) {
     display: flex;
@@ -30,18 +32,23 @@ export const LeftCopy = styled.div`
     flex-direction: column;
     margin: 1rem;
   }
-  @media (min-width: 20rem) {
+  @media (min-width: 37.5rem) {
     display: flex;
     flex-direction: column;
     margin: 1rem;
   }
   @media (min-width: 48rem) {
     display: flex;
-    width: 16.5rem;
+    width: auto;
     height: auto;
-    margin-left: 2.5rem;
+    margin-right: 1rem;
+    
   }
   @media (min-width: 65.5rem) {
+    display: flex;
+    align-items: center
+    justify-content: center;
+    width: 16.5rem;
   }
 `;
 
@@ -52,26 +59,24 @@ export const LeftHeadline = styled.h2`
     text-align: left;
     margin-left: 0.5rem;
   }
-  @media (min-width: 20rem) {
+  @media (min-width: 37.5rem) {
     font-size: 2.25rem;
-    font-family: Muli-Bold;
   }
   @media (min-width: 48rem) {
+    margin: 0;
     display: flex;
     justify-content: flex-start;
     font-size: 1.375rem;
-    list-style: 1.75rem;
     font-family: Muli-Bold;
     text-align: left;
     opacity: 1;
-    margin-top: 3rem;
+
     margin-bottom: 0.5rem;
   }
   @media (min-width: 65.5rem) {
     display: flex;
     justify-content: flex-start;
     font-size: 1.375rem;
-    list-style: 1.75rem;
     font-family: Muli-Bold;
     text-align: left;
     opacity: 1;
@@ -86,10 +91,19 @@ export const LeftCopyParagraph = styled.p`
     margin-left: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: Muli-Regular;
   }
-  @media (min-width: 20rem) {
+  @media (min-width: 37.5rem) {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
   }
   @media (min-width: 48rem) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
   }
   @media (min-width: 65.5rem) {
     text-align: left;
@@ -109,6 +123,11 @@ export const CategoryList = styled.ul`
     color: inherit;
     text-decoration: inherit;
     margin-left: 0.5rem;
+    font-family: Muli-Bold;
+
+    @media (min-width: 48rem) {
+      margin: 0;
+    }
   }
 `;
 
@@ -118,7 +137,7 @@ export const FeatureImage = styled.img`
     width: 100%;
     margin: 0;
   }
-  @media (min-width: 20rem) {
+  @media (min-width: 37.5rem) {
     width: 100%;
   }
   @media (min-width: 48rem) {
