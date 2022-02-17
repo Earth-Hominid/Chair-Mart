@@ -50,7 +50,7 @@ export const LeftHeadline = styled.h2`
     font-size: 2.25rem;
     font-family: Muli-Bold;
     text-align: left;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
   @media (min-width: 20rem) {
     font-size: 2.25rem;
@@ -83,7 +83,9 @@ export const LeftHeadline = styled.h2`
 export const LeftCopyParagraph = styled.p`
   @media (min-width: 1rem) {
     text-align: left;
-    margin: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   @media (min-width: 20rem) {
   }
@@ -106,7 +108,7 @@ export const CategoryList = styled.ul`
   a {
     color: inherit;
     text-decoration: inherit;
-    margin: 1rem;
+    margin-left: 0.5rem;
   }
 `;
 
