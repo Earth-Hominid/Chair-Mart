@@ -3,6 +3,7 @@ import CategoryBar from '../department-navbar/CategoryBar';
 import HeroHome from '../hero/HeroHome.js';
 import Showcase from '../department-showcase/Showcase';
 import chairProducts from '../../../utils/chairProducts';
+import OfficeFeature from '../office-feature/OfficeFeature';
 
 const Home = () => {
   const [newIn, setNewIn] = useState([]);
@@ -43,6 +44,7 @@ const Home = () => {
         forward={handleForwardClick}
         backward={handleBackwardClick}
       />
+      <OfficeFeature />
     </>
   );
 };

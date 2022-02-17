@@ -52,7 +52,7 @@ export const ProductContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   max-width: 18.375rem;
   max-height: 22.813rem;
 `;
@@ -91,7 +91,18 @@ export const ProductPrice = styled.h2`
   font: normal normal normal 14px/20px Muli-Regular;
   color: #000000;
   opacity: 1;
-  padding-top: 1vh;
-  padding-bottom: 2.5vh;
+  padding-top: 0.5rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1rem;
   display: block;
+`;
+
+export const CategoryList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 `;
