@@ -33,23 +33,29 @@ export const NextButton = styled.button`
 `;
 
 export const CarouselContainer = styled.div`
-  display: flex;
-  align-items: center;
-  min-height: 22.813rem;
-  justify-content: center;
-`;
-
-export const ShowcaseCarousel = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  margin-left: 3.688rem;
-  margin-right: 3.688rem;
+  margin-bottom: 2rem;
 `;
 
 export const ProductContainer = styled.div`
   padding: 0.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  @media (min-width: 37.5rem) {
+    margin: 0;
+  }
+  @media (min-width: 48rem) {
+    margin: 0;
+  }
+  @media (min-width: 65.5rem) {
+    margin: 0;
+  }
+  @media (min-width: 78rem) {
+    margin-left: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  @media (min-width: 125rem) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    justify-content: space-between;
+  }
 `;
 
 export const ProductBackground = styled.div`

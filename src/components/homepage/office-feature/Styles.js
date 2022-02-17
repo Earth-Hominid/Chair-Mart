@@ -23,6 +23,8 @@ export const Display = styled.div`
   @media (min-width: 65.5rem) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 0;
   }
 `;
 
@@ -81,7 +83,7 @@ export const LeftHeadline = styled.h2`
     text-align: left;
     opacity: 1;
     margin-top: 3.25rem;
-    margin-bottom: 1.563rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -111,9 +113,8 @@ export const LeftCopyParagraph = styled.p`
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
-    margin-right: 2.7894vw;
-    margin-top: 3.0418vh;
-    margin-bottom: 5.3231vh;
+    margin-right: 2.188rem;
+    margin-bottom: 4.156rem;
     min-width: 15.625rem;
   }
 `;

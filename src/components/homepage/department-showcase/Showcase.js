@@ -44,9 +44,7 @@ const ShowcaseHome = ({ chairs, forward, backward }) => {
         </CarouselButtons>
       </ProductShowcase>
       <CarouselContainer>
-        <ShowcaseCarousel>
-          <Chairs chairs={chairs} />
-        </ShowcaseCarousel>
+        <Chairs chairs={chairs} />
       </CarouselContainer>
     </section>
   );
