@@ -1,7 +1,9 @@
+import Landing from '../components/landing-page/Landing';
+
 function LandingPage() {
   return (
     <>
-      <header>Landing</header>
+      <Landing />
     </>
   );
 }
