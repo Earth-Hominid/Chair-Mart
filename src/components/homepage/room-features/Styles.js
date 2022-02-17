@@ -38,8 +38,7 @@ export const Display = styled.div`
   @media (min-width: 65.5rem) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-bottom: 4rem;
+    justify-content: space-around;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -63,15 +62,15 @@ export const LeftCopy = styled.div`
     height: auto;
     margin-left: 2rem;
     margin-right: 2rem;
-    
   }
   @media (min-width: 65.5rem) {
     display: flex;
-    align-items: center
-    justify-content: center;
-    width: 16.5rem;
+    max-width: 25rem;
+    height: auto;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 `;
 
@@ -92,19 +91,14 @@ export const LeftHeadline = styled.h2`
     font-size: 1.375rem;
     font-family: Muli-Bold;
     text-align: left;
-    opacity: 1;
-
     margin-bottom: 0.5rem;
   }
   @media (min-width: 65.5rem) {
     display: flex;
     justify-content: flex-start;
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     font-family: Muli-Bold;
     text-align: left;
-    opacity: 1;
-    margin-top: 3.25rem;
-    margin-bottom: 1rem;
   }
 `;
 
@@ -164,6 +158,8 @@ export const FeatureImage = styled.img`
   }
   @media (min-width: 48rem) {
     max-width: 30rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   @media (min-width: 65.5rem) {
     max-width: 40rem;
