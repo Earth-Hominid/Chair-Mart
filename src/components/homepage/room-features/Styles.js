@@ -1,8 +1,22 @@
 import styled from 'styled-components';
 
+export const SmallScreen = styled.div`
+  @media (min-width: 48rem) {
+    display: none;
+  }
+`;
+
+export const BigScreen = styled.div`
+  display: none;
+  @media (min-width: 48rem) {
+    display: block;
+  }
+`;
+
 export const Display = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
   @media (min-width: 1rem) {
     display: flex;
     flex-direction: column;
@@ -19,12 +33,16 @@ export const Display = styled.div`
     align-items: center;
     margin-right: 1rem;
     margin-left: 1rem;
+    margin-bottom: 3rem;
   }
   @media (min-width: 65.5rem) {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
+    margin-bottom: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
   }
 `;
 
@@ -43,7 +61,8 @@ export const LeftCopy = styled.div`
     display: flex;
     width: auto;
     height: auto;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     
   }
   @media (min-width: 65.5rem) {
@@ -51,6 +70,8 @@ export const LeftCopy = styled.div`
     align-items: center
     justify-content: center;
     width: 16.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 `;
 

@@ -1,7 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import { CategoryList, FeatureImage } from './Styles';
+import {
+  CategoryList,
+  FeatureImage,
+  Display,
+  LeftCopy,
+  LeftHeadline,
+  LeftCopyParagraph,
+} from './Styles';
 import Office from '../../../assets/images/rooms/office.jpg';
-import { Display, LeftCopy, LeftHeadline, LeftCopyParagraph } from './Styles';
 
 const OfficeFeature = () => {
   return (

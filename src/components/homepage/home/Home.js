@@ -3,9 +3,9 @@ import CategoryBar from '../department-navbar/CategoryBar';
 import HeroHome from '../hero/HeroHome.js';
 import Showcase from '../department-showcase/Showcase';
 import chairProducts from '../../../utils/chairProducts';
-import OfficeFeature from '../office-feature/OfficeFeature';
-import BedroomFeature from '../bedroom-feature/BedroomFeature';
-import KitchenFeature from '../kitchen-feature/KitchenFeature';
+import OfficeFeature from '../room-features/OfficeFeature';
+import BedroomFeature from '../room-features/BedroomFeature';
+import KitchenFeature from '../room-features/KitchenFeature';
 import Footer from '../../footer/Footer';
 
 const Home = () => {
