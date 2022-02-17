@@ -124,12 +124,14 @@ export const LeftCopyParagraph = styled.p`
   }
   @media (min-width: 65.5rem) {
     text-align: left;
-    font: normal normal normal 16px/21px Muli;
+    font-size: 1.313rem;
+    font-family: Muli-Regular;
+    line-height: 1.8rem;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    margin-bottom: 1.5rem;
     margin-right: 2.188rem;
-    margin-bottom: 4.156rem;
     min-width: 15.625rem;
   }
 `;
@@ -137,10 +139,8 @@ export const LeftCopyParagraph = styled.p`
 export const CategoryList = styled.ul`
   a {
     color: inherit;
-    text-decoration: inherit;
     margin-left: 0.5rem;
-    font-family: Muli-Bold;
-
+    font-family: Muli-Regular;
     @media (min-width: 48rem) {
       margin: 0;
     }
