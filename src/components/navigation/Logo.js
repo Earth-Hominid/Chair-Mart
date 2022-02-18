@@ -1,7 +1,8 @@
 import logo from '../../assets/images/logo/chair-mart-yellow.jpg';
+import { StyledLogoImage } from './Navigation.styles';
 
 const Logo = () => {
-  return <img id="logo" src={logo} alt="Chair-Mart logo" />;
+  return <StyledLogoImage src={logo} alt="Chair-Mart logo" />;
 };
 
 export default Logo;
