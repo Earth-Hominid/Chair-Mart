@@ -2,17 +2,18 @@ import { Link } from 'react-router-dom';
 import NavLinkBar from './NavLinkBar';
 import Logo from './Logo';
 import './navigation.css';
+import { StyledNav } from './Navigation.styles';
 
 import React from 'react';
 
 const Navigation = () => {
   return (
-    <nav id="nav">
+    <StyledNav>
       <Link to="/">
         <Logo />
       </Link>
       <NavLinkBar />
-    </nav>
+    </StyledNav>
   );
 };
 
