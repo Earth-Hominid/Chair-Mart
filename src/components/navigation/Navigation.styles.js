@@ -54,32 +54,33 @@ export const StyledLogoImage = styled.img`
 `;
 
 export const NavigationBar = styled.div`
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 3.813rem;`
+  margin-right: 3.813rem;
+`;
 
-export const NavigationIcons = styled.img` cursor: not-allowed;`
-
-.nav__icons {
+export const NavigationIcons = styled.img`
   cursor: not-allowed;
-}
+`;
 
-#search {
+export const StyledSearchIcon = styled.img`
+  cursor: not-allowed;
   height: 20px;
   width: 20px;
   margin: 1.25rem;
-}
+`;
 
-#log-in {
+export const StyledLogInIcon = styled.img`
+  cursor: not-allowed;
   height: 24px;
   width: 20px;
   margin: 1.25rem;
-}
+`;
 
-#bag {
+export const StyledBagIcon = styled.img`
   height: 24px;
   width: 20px;
   margin: 1.25rem;
   cursor: pointer;
-}
+`;
