@@ -20,6 +20,8 @@ export const ProductBackground = styled.div`
   border-radius: 5px;
   height: 15.563rem;
   width: 15.563rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
   &:hover {
     transform: scale(1.05);
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.6);
@@ -36,7 +38,7 @@ export const ProductImage = styled.img`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
 `;
 
@@ -83,4 +85,9 @@ export const AddToCartButton = styled.button`
   padding: 0.5rem;
   cursor: pointer;
   margin-top: 0.5rem;
+  &:hover {
+    color: #ff7b54;
+    background-color: transparent;
+    border: 1px solid #ff7b54;
+  }
 `;
