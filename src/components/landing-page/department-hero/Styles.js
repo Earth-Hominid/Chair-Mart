@@ -175,16 +175,3 @@ export const HeroParagraph = styled.p`
     margin-bottom: 1.5rem;
   }
 `;
-
-export const SmallScreen = styled.div`
-  @media (min-width: 48rem) {
-    display: none;
-  }
-`;
-
-export const BigScreen = styled.div`
-  display: none;
-  @media (min-width: 48rem) {
-    display: block;
-  }
-`;

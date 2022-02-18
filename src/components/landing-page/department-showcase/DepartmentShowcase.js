@@ -1,11 +1,12 @@
 import Products from './Products';
+import { DepartmentContainer } from './Styles';
 
 const DepartmentShowcase = () => {
   return (
-    <section className="room_feature_section">
-      <div className="category_feature_container">
+    <section>
+      <DepartmentContainer>
         <Products />
-      </div>
+      </DepartmentContainer>
     </section>
   );
 };

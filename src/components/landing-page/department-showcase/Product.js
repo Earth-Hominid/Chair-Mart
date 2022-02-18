@@ -1,23 +1,32 @@
+import {
+  ProductContainer,
+  ProductBackground,
+  ProductImage,
+  TextContainer,
+  ProductName,
+  ProductPrice,
+  CategoryList,
+  AddToCartButton,
+} from './Styles';
+
 const Product = ({ product, onClick }) => {
   return (
-    <div className="chair__product__container">
-      <div className="chair__product__background">
-        <img
+    <ProductContainer>
+      <ProductBackground>
+        <ProductImage
           className="chair__product__image"
           key={product.id}
           src={product.image}
           alt={product.name}
           data-id={product.id}
         />
-      </div>
-      <div className="align-center">
-        <h2 className="showcase-product-name">{product.name}</h2>
-        <h2 className="showcase-product-price">{product.amount}</h2>
-        <button className="showcase-add-button" onClick={onClick}>
-          Add to cart
-        </button>
-      </div>
-    </div>
+      </ProductBackground>
+      <TextContainer>
+        <ProductName>{product.name}</ProductName>
+        <ProductPrice>{product.amount}</ProductPrice>
+        <AddToCartButton onClick={onClick}>Add to cart</AddToCartButton>
+      </TextContainer>
+    </ProductContainer>
   );
 };
 
