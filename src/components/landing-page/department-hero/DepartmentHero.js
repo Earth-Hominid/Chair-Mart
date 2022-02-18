@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { UserCart } from '../../../context/UserCart';
 import { useNavigate } from 'react-router-dom';
 import Office from '../../../assets/images/rooms/office.jpg';
+
 import {
   BottomBorder,
   HeroContainer,
