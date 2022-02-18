@@ -18,6 +18,14 @@ export const HeadlineContainer = styled.div`
   @media (min-width: 20rem) {
     margin-left: 1rem;
   }
+  @media (min-width: 49rem) {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  @media (min-width: 65.5rem) {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+  }
 `;
 
 export const Headline = styled.h2`

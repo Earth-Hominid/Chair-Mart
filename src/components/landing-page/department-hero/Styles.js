@@ -141,7 +141,7 @@ export const HeroHeadline = styled.h1`
   }
   @media (min-width: 75rem) {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.375rem;
   }
 `;
 
@@ -167,7 +167,7 @@ export const HeroParagraph = styled.p`
   }
   @media (min-width: 65.5rem) {
     text-align: left;
-    font-size: 1.313rem;
+    font-size: 1.125rem;
     font-family: Muli-Regular;
     line-height: 1.8rem;
     letter-spacing: 0px;
