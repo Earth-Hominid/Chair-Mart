@@ -9,6 +9,13 @@ export const StyledNav = styled.nav`
   white-space: nowrap;
 `;
 
+export const StyledNavigationBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3.813rem;
+`;
+
 export const StyledLogoImage = styled.img`
   max-width: 4rem;
   @media screen and (min-width: 20rem) {
@@ -83,4 +90,31 @@ export const StyledBagIcon = styled.img`
   width: 20px;
   margin: 1.25rem;
   cursor: pointer;
+`;
+
+export const StyledCartQuantity = styled.p`
+  text-decoration: none;
+  background-color: #ff7b54;
+  color: white;
+  position: relative;
+  left: -2.2em;
+  top: -1.5em;
+  border-radius: 1.75rem;
+  white-space: nowrap;
+  font-size: 0.844rem;
+  font-weight: 500;
+  line-height: 1.25em;
+  text-align: center;
+  padding: 0 0.3em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 3;
+  height: 1.25em;
+  min-width: 1.25em;
+`;
+
+export const StyledBagContainer = styled.div`
+  .bag {
+    position: absolute;
+  }
 `;

@@ -1,32 +1,37 @@
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { UserCart } from '../../context/UserCart';
-import { useNavigate } from 'react-router-dom';
 import Search from './Search';
 import LogIn from './LogIn';
 import Bag from './Bag';
+import { StyledNavigationBar, StyledCartQuantity } from './Navigation.styles';
 
 const NavLinkBar = () => {
-  // const { totalQuantity } = useContext(UserCart);
-  // const navigate = useNavigate();
+  const [bagFilled, setBagFilled] = useState(false);
+  const { cart, totalQuantity } = useContext(UserCart);
 
-  // const routeChange = () => {
-  //   let path = `/shoppingcart`;
-  //   navigate(path);
-  // };
+  const checkBagQuantity = () => {
+    if (cart.length <= 0) {
+      setBagFilled(false);
+    } else if (cart.length > 0) {
+      setBagFilled(!bagFilled);
+    }
+  };
 
-  // const goToCart = () => {
-  //   routeChange();
-  // };
+  useEffect(() => {
+    checkBagQuantity();
+  }, []);
 
   return (
-    <div className="nav__bar">
+    <StyledNavigationBar>
       <Search />
       <LogIn />
-      <Link to="/cart">
-        <Bag />
-      </Link>
-    </div>
+      <Bag />
+      {bagFilled ? (
+        <StyledCartQuantity>{totalQuantity()} </StyledCartQuantity>
+      ) : (
+        ''
+      )}
+    </StyledNavigationBar>
   );
 };
 

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import NavLinkBar from './NavLinkBar';
 import Logo from './Logo';
-import './navigation.css';
 import { StyledNav } from './Navigation.styles';
 
 import React from 'react';
