@@ -5,7 +5,6 @@ import {
   TextContainer,
   ProductName,
   ProductPrice,
-  CategoryList,
   AddToCartButton,
 } from './Styles';
 

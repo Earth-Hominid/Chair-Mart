@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CartHeader, CartTitle, CartLinkTitle } from '../Cart.styles';
+import { CartHeader, CartTitle, CartLinkTitle } from './Styles';
 
 const ShoppingCartHeader = () => {
   return (
