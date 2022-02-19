@@ -13,7 +13,7 @@ export const StyledNavigationBar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 3.813rem;
+  margin-right: 1rem;
 `;
 
 export const StyledLogoImage = styled.img`
