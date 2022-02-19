@@ -23,3 +23,21 @@ export const QuantityButton = styled.button`
   color: rgb(var(--color-foreground));
   padding: 0;
 `;
+
+export const QuantityIcon = styled.img`
+  width: 3rem;
+  height: auto;
+`;
+
+export const QuantityInput = styled.input`
+  color: #575757;
+  font-family: Muli-Regular;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  padding: 0 0.5rem;
+  width: 100%;
+  flex-grow: 1;
+`;

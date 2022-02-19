@@ -1,16 +1,11 @@
-import Delete from '../../assets/images/icons/cart-counter/delete-black.png';
-
-import React from 'react';
+import Delete from '../../../../assets/images/icons/cart-counter/delete-black.png';
+import { StyledDeleteButton, StyledDeleteIcon } from './Styles';
 
 const DeleteButton = ({ onClick }) => {
   return (
-    <button className="cart__delete__button" onClick={onClick}>
-      <img
-        src={Delete}
-        alt="delete-button"
-        className="cart__delete__image"
-      ></img>
-    </button>
+    <StyledDeleteButton onClick={onClick}>
+      <StyledDeleteIcon src={Delete} alt="delete-button"></StyledDeleteIcon>
+    </StyledDeleteButton>
   );
 };
 

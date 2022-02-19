@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { UserCart } from '../../../../context/UserCart';
 import Items from '../items/Items';
-import { CartHeader, CartSmallTitle } from '/Styles.js';
+import { CartHeader, CartSmallTitle } from './Styles';
 
 const ProductSummary = () => {
   const { cart } = useContext(UserCart);

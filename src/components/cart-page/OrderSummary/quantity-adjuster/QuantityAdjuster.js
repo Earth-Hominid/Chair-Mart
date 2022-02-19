@@ -1,8 +1,13 @@
-import { useState, useContext } from 'react';
-import { UserCart } from '../../UserCart';
+import { useContext } from 'react';
+import { UserCart } from '../../../../context/UserCart';
 import plusIcon from '../../../../assets/images/icons/cart-counter/plus-black.png';
 import minusIcon from '../../../../assets/images/icons/cart-counter/minus-black.png';
-import { QuantityContainer, QuantityButton } from './Styles';
+import {
+  QuantityContainer,
+  QuantityButton,
+  QuantityIcon,
+  QuantityInput,
+} from './Styles';
 
 const QuantityAdjuster = ({ product }) => {
   const { quantity, setQuantity } = useContext(UserCart);
@@ -28,19 +33,18 @@ const QuantityAdjuster = ({ product }) => {
   return (
     <QuantityContainer>
       <QuantityButton onClick={decrease} name="minus" type="button">
-        <img className="quantity__icon" src={minusIcon} alt="minus-icon"></img>
+        <QuantityIcon src={minusIcon} alt="minus-icon"></QuantityIcon>
       </QuantityButton>
-      <input
+      <QuantityInput
         type="number"
         name="quantity"
         onChange={onChangeHandler}
-        className="quantity__input"
         value={product.quantity}
         min="1"
       />
-      <button className="quantity__button" onClick={increase}>
-        <img className="quantity__icon" src={plusIcon} alt="plus-icon"></img>
-      </button>
+      <QuantityButton onClick={increase}>
+        <QuantityIcon src={plusIcon} alt="plus-icon"></QuantityIcon>
+      </QuantityButton>
     </QuantityContainer>
   );
 };
