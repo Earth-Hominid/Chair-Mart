@@ -1,16 +1,7 @@
 import styled from 'styled-components';
 
-export const SectionContainer = styled.section`
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-`;
-
 export const SummaryContainer = styled.div`
-  width: 90%;
+  width: 100%;
   border-top: 1px solid rgba(18, 18, 18, 0.08);
   border-bottom: 1px solid rgba(18, 18, 18, 0.08);
 `;

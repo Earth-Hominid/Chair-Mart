@@ -2,7 +2,6 @@ import ProductSummary from './product-summary/ProductSummary.js';
 import { useState, useEffect, useContext } from 'react';
 import { UserCart } from '../../../context/UserCart';
 import {
-  SectionContainer,
   SummaryContainer,
   EmptyCartContainer,
   EmptyCartTitle,
@@ -37,11 +36,9 @@ const OrderSummary = () => {
 
   return (
     <>
-      <SectionContainer>
-        <SummaryContainer>
-          {empty ? <EmptyOrderSummary /> : <ProductSummary cart={cart} />}
-        </SummaryContainer>
-      </SectionContainer>
+      <SummaryContainer>
+        {empty ? <EmptyOrderSummary /> : <ProductSummary cart={cart} />}
+      </SummaryContainer>
     </>
   );
 };

@@ -6,6 +6,8 @@ export const CartHeader = styled.div`
   justify-content: space-between;
   color: #121212bf;
   margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 export const CartSmallTitle = styled.h4`
