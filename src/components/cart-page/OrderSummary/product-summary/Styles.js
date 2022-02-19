@@ -15,7 +15,7 @@ export const CartSmallTitle = styled.h4`
 `;
 
 export const CartContainer = styled.div`
-  max-width: 45rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
 `;
