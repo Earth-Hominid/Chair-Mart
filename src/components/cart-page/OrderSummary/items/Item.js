@@ -25,7 +25,7 @@ const Item = ({ product, onClick }) => {
       <TextContainer>
         <ProductStyledTitle>{product.name}</ProductStyledTitle>
         <ProductStyledPrice>{product.amount}</ProductStyledPrice>
-        <ProductStyledColor>Color: {product.color}</ProductStyledColor>
+        <ProductStyledColor>{product.color}</ProductStyledColor>
       </TextContainer>
       <AdjusterContainer>
         <QuantityAdjuster product={product} />

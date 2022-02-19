@@ -4,7 +4,6 @@ export const CartProductContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
 `;
@@ -34,7 +33,6 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
 `;
 
 export const ProductStyledTitle = styled.h2`
@@ -65,15 +63,11 @@ export const ProductStyledPrice = styled.h2`
 export const ProductStyledColor = styled.h2`
   width: auto;
   height: 18px;
-  text-align: center;
   font-family: Muli-Regular;
   font-size: 0.875rem;
-  letter-spacing: 0px;
   color: #121212bf;
-  opacity: 1;
   padding-top: 1vh;
   padding-bottom: 2rem;
-  display: block;
 `;
 
 export const AdjusterContainer = styled.div`
