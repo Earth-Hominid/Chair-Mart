@@ -1,17 +1,19 @@
 import { useContext } from 'react';
 import { UserCart } from '../../../../context/UserCart';
 import Items from '../items/Items';
-import { CartHeader, CartSmallTitle } from './Styles';
+import { CartHeader, CartSmallTitle, CartContainer } from './Styles';
 
 const ProductSummary = () => {
   const { cart } = useContext(UserCart);
   return (
     <>
-      <CartHeader>
-        <CartSmallTitle>PRODUCT</CartSmallTitle>
-        <CartSmallTitle>TOTAL</CartSmallTitle>
-      </CartHeader>
-      <Items cart={cart} />
+      <CartContainer>
+        <CartHeader>
+          <CartSmallTitle>PRODUCT</CartSmallTitle>
+          <CartSmallTitle>TOTAL</CartSmallTitle>
+        </CartHeader>
+        <Items cart={cart} />
+      </CartContainer>
     </>
   );
 };

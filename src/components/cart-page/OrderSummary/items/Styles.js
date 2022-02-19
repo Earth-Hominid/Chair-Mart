@@ -14,8 +14,10 @@ export const CartProductBackground = styled.div`
   align-items: center;
   background: #efefef;
   border-radius: 5px;
-  height: 5rem;
-  width: 5rem;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   &:hover {
     transform: scale(1.05);
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.6);

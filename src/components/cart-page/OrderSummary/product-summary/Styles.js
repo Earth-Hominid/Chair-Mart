@@ -13,3 +13,9 @@ export const CartHeader = styled.div`
 export const CartSmallTitle = styled.h4`
   font-size: 0.625rem;
 `;
+
+export const CartContainer = styled.div`
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+`;
