@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { UserCart } from '../../../context/UserCart';
 import {
   ButtonContainer,
   CheckOutButton,
@@ -11,6 +13,8 @@ import {
 } from './Styles';
 
 const Subtotal = () => {
+  const { cart, subTotal } = useContext(UserCart);
+
   const navigate = useNavigate();
 
   const routeChange = () => {
@@ -28,8 +32,12 @@ const Subtotal = () => {
         <SubtotalContainer>
           <div>
             <SubtotalTextContainer>
-              <SubtotalTitle>Subtotal</SubtotalTitle>
-              <SubtotalValue>1,250.00</SubtotalValue>
+              <SubtotalTitle>Subtotal:</SubtotalTitle>
+              {cart.length > 0 ? (
+                <div className="total__cost">{`$${subTotal()}.00 USD`}</div>
+              ) : (
+                ''
+              )}
             </SubtotalTextContainer>
             <SubtotalNote>
               Taxes and shipping calculated at checkout
