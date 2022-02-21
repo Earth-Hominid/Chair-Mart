@@ -6,6 +6,7 @@ import Homepage from './Homepage';
 import Checkout from './CheckoutPage';
 import Cart from './CartPage';
 import Landing from './LandingPage';
+import AirliePage from './AirliePage';
 import NotFound from './NotFound';
 import WithNav from '../outlet/WithNav';
 import WithOutNav from '../outlet/WithOutNav';
@@ -117,6 +118,7 @@ const RouteSwitch = () => {
             <Route path="/" element={<Homepage />} />
             <Route path="/landing" element={<Landing />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/airlie" element={<AirliePage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
