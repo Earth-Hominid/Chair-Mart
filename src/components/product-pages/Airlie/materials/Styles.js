@@ -11,10 +11,12 @@ export const AccordianSummary = styled.summary`
   display: flex;
   align-items: center;
   height: 2rem;
+  cursor: pointer;
+  list-style: none;
 `;
 
 export const ImageIcon = styled.img`
-  width: 4rem;
+  width: 3.5rem;
   height: auto;
 `;
 
