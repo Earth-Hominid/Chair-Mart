@@ -1,6 +1,6 @@
 import AirlieImageColumn from '../image-section/AirlieImageColumn';
 import AirlieDetails from '../detail-section/AirlieDetails';
-import { ProductPageSection, ProductPageRow } from '../../Styles';
+import { ProductPageSection, ProductPageRow } from './Styles';
 
 const AirlieSection = () => {
   return (
