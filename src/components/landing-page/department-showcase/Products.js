@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { UserCart } from '../../../context/UserCart';
+import { NavLink } from 'react-router-dom';
 import Product from './Product';
 
 const Products = () => {
@@ -8,13 +9,13 @@ const Products = () => {
   return (
     <>
       {products.map((product, index) => (
-        <div key={index}>
+        <NavLink to={`/${product.name}`} key={index}>
           <Product
             key={index}
             product={product}
             onClick={() => addToCart(product)}
           />
-        </div>
+        </NavLink>
       ))}
     </>
   );
