@@ -16,7 +16,7 @@ export const AccordianSummary = styled.summary`
 `;
 
 export const ImageIcon = styled.img`
-  width: 3.5rem;
+  width: 3.2rem;
   height: auto;
 `;
 
@@ -37,4 +37,9 @@ export const AccordianText = styled.p`
   font-family: Muli-Regular;
   letter-spacing: 0.06rem;
   line-height: 1.8;
+`;
+
+export const AccordianNoBorderContainer = styled.div`
+  margin-right: 3.688rem;
+  padding: 0.5rem 0;
 `;
