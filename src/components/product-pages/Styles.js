@@ -43,3 +43,22 @@ export const SecondaryImageColumn = styled.div`
   flex-basis: 49%;
   background-color: #efefef;
 `;
+
+export const ProductDetailsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+  margin-right: 1.5rem;
+  margin-left: 3rem;
+`;
+
+export const ProductTitle = styled.h1`
+  margin: 0px 0px 15px;
+  color: #000000;
+  word-break: break-word;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.06rem;
+  opacity: 1;
+  font-family: Muli-Bold;
+`;
