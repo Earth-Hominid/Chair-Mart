@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import QuantityAdjuster from '../quantity-adjuster/QuantityAdjuster';
 import BlankFavorite from '../../../../assets/images/icons/fav.png';
 import Favorite from '../../../../assets/images/icons/fav-color.png';
-
 import {
   ProductDetailsContainer,
   ProductPrice,
@@ -19,8 +18,9 @@ import {
   FavoriteButton,
   ProductDescriptionContainer,
   ProductDescription,
-} from '../../Styles';
+} from './Styles';
 import chairProducts from '../../../../utils/chairProducts';
+import MaterialSection from '../materials/Materials';
 const AirlieDetails = () => {
   const [favorite, setFavorite] = useState(false);
 
@@ -75,6 +75,7 @@ const AirlieDetails = () => {
             {chairProducts[0].description}
           </ProductDescription>
         </ProductDescriptionContainer>
+        <MaterialSection />
       </ProductDetailsContainer>
     </>
   );
