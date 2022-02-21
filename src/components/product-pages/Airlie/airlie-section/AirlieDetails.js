@@ -17,6 +17,8 @@ import {
   AddToBagButton,
   BuyNowButton,
   FavoriteButton,
+  ProductDescriptionContainer,
+  ProductDescription,
 } from '../../Styles';
 import chairProducts from '../../../../utils/chairProducts';
 const AirlieDetails = () => {
@@ -68,6 +70,11 @@ const AirlieDetails = () => {
         <ButtonContainer>
           <BuyNowButton onClick={() => buyNow()}>Buy it now </BuyNowButton>
         </ButtonContainer>
+        <ProductDescriptionContainer>
+          <ProductDescription>
+            {chairProducts[0].description}
+          </ProductDescription>
+        </ProductDescriptionContainer>
       </ProductDetailsContainer>
     </>
   );
