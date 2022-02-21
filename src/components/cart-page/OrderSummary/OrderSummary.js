@@ -1,5 +1,5 @@
 import ProductSummary from './product-summary/ProductSummary.js';
-import { useState, useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { UserCart } from '../../../context/UserCart';
 import {
   SummaryContainer,
@@ -23,7 +23,7 @@ const OrderSummary = () => {
   return (
     <>
       <SummaryContainer>
-        {!bagFilled ? <EmptyOrderSummary /> : <ProductSummary cart={cart} />}
+        {bagFilled ? <ProductSummary cart={cart} /> : <EmptyOrderSummary />}
       </SummaryContainer>
     </>
   );

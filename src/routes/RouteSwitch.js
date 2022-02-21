@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { UserCart } from '../context/UserCart';
 import Chairs from '../utils/chairProducts';
@@ -18,14 +18,7 @@ const getCartFromLocalStorage = JSON.parse(
 const RouteSwitch = () => {
   const [cart, setCart] = useState(getCartFromLocalStorage);
   const [products] = useState(Chairs);
-  const [bagFilled, setBagFilled] = useState();
-  const checkBagQuantity = () => {
-    if (cart.length <= 0) {
-      setBagFilled(false);
-    } else if (cart.length > 0) {
-      setBagFilled(!bagFilled);
-    }
-  };
+  const [bagFilled, setBagFilled] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -64,9 +57,17 @@ const RouteSwitch = () => {
     return cart.reduce((sum, { price, quantity }) => sum + price * quantity, 0);
   };
 
-  const totalQuantity = () => {
+  const totalQuantity = useCallback(() => {
     return cart.reduce((sum, { quantity }) => sum + quantity, 0);
-  };
+  }, [cart]);
+
+  const checkBagQuantity = useCallback(() => {
+    let bagQuantity = totalQuantity;
+    if (bagQuantity == null) return;
+    if (bagQuantity <= 0) {
+      setBagFilled(false);
+    } else setBagFilled(true);
+  }, [totalQuantity]);
 
   const decrement = (product, quantity) => {
     if (quantity <= 1) return;
@@ -105,6 +106,7 @@ const RouteSwitch = () => {
           increaseQuantity,
           decrement,
           bagFilled,
+          checkBagQuantity,
         }}
       >
         <Routes>

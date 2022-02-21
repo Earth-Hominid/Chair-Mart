@@ -41,6 +41,7 @@ const QuantityAdjuster = ({ product }) => {
         onChange={onChangeHandler}
         value={product.quantity}
         min="1"
+        max="8"
       />
       <QuantityButton onClick={increase}>
         <QuantityIcon src={plusIcon} alt="plus-icon"></QuantityIcon>

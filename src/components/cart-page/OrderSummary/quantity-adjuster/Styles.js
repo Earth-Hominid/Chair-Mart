@@ -40,4 +40,7 @@ export const QuantityInput = styled.input`
   padding: 0 0.5rem;
   width: 100%;
   flex-grow: 1;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  margin: 0;
 `;
