@@ -21,6 +21,8 @@ import {
 } from './Styles';
 import chairProducts from '../../../../utils/chairProducts';
 import MaterialSection from '../materials/Materials';
+import FinishSection from '../materials/FinishSection';
+import DimensionSection from '../materials/DimensionSection';
 const AirlieDetails = () => {
   const [favorite, setFavorite] = useState(false);
 
@@ -76,6 +78,8 @@ const AirlieDetails = () => {
           </ProductDescription>
         </ProductDescriptionContainer>
         <MaterialSection />
+        <FinishSection />
+        <DimensionSection />
       </ProductDetailsContainer>
     </>
   );
