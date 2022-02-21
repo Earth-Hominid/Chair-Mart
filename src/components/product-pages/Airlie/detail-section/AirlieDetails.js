@@ -58,7 +58,7 @@ const AirlieDetails = () => {
           </SecondaryColorButton>
         </ColorContainer>
         <ProductSubtitle>Quantity</ProductSubtitle>
-        <QuantityAdjuster product={chairProducts[0]} />
+        <QuantityAdjuster product={cart[0]} />
         <ButtonContainer>
           <AddToBagButton>Add to bag</AddToBagButton>
           <FavoriteButton onClick={handleFavoriteClick}>

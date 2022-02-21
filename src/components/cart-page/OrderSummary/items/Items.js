@@ -9,13 +9,13 @@ const Items = () => {
   return (
     <>
       {cart.map((product, index) => (
-        <NavLink to={`/${product.name}`} key={index}>
+        <div key={index}>
           <Item
             key={index}
             product={product}
             onClick={() => removeFromCart(product)}
           />
-        </NavLink>
+        </div>
       ))}
     </>
   );

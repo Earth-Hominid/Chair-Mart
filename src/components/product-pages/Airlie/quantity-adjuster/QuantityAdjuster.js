@@ -10,7 +10,7 @@ import {
 } from './Styles';
 
 const QuantityAdjuster = ({ product }) => {
-  const { quantity, setQuantity } = useContext(UserCart);
+  const { cart, quantity, setQuantity } = useContext(UserCart);
 
   const onChangeHandler = (event) => {
     setQuantity(product, parseInt(Math.round(Number(event.target.value))));

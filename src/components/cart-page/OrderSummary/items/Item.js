@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import QuantityAdjuster from '../quantity-adjuster/QuantityAdjuster';
 import DeleteButton from '../delete-button/DeleteButton';
 import {
@@ -14,14 +15,17 @@ import {
 const Item = ({ product, onClick }) => {
   return (
     <CartProductContainer>
-      <CartProductBackground>
-        <CartProductImage
-          key={product.id}
-          src={product.image}
-          alt={product.name}
-          data-id={product.id}
-        />
-      </CartProductBackground>
+      <NavLink to={`/${product.name}`}>
+        <CartProductBackground>
+          <CartProductImage
+            key={product.id}
+            src={product.image}
+            alt={product.name}
+            data-id={product.id}
+          />
+        </CartProductBackground>
+      </NavLink>
+
       <TextContainer>
         <ProductStyledTitle>{product.name}</ProductStyledTitle>
         <ProductStyledPrice>{product.amount}</ProductStyledPrice>

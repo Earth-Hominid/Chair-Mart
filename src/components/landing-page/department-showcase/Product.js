@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import {
   ProductContainer,
   ProductBackground,
@@ -11,15 +12,18 @@ import {
 const Product = ({ product, onClick }) => {
   return (
     <ProductContainer>
-      <ProductBackground>
-        <ProductImage
-          className="chair__product__image"
-          key={product.id}
-          src={product.image}
-          alt={product.name}
-          data-id={product.id}
-        />
-      </ProductBackground>
+      <NavLink to={`/${product.name}`}>
+        <ProductBackground>
+          <ProductImage
+            className="chair__product__image"
+            key={product.id}
+            src={product.image}
+            alt={product.name}
+            data-id={product.id}
+          />
+        </ProductBackground>
+      </NavLink>
+
       <TextContainer>
         <ProductName>{product.name}</ProductName>
         <ProductPrice>{product.amount}</ProductPrice>
