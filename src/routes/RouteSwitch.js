@@ -18,6 +18,14 @@ const getCartFromLocalStorage = JSON.parse(
 const RouteSwitch = () => {
   const [cart, setCart] = useState(getCartFromLocalStorage);
   const [products] = useState(Chairs);
+  const [bagFilled, setBagFilled] = useState();
+  const checkBagQuantity = () => {
+    if (cart.length <= 0) {
+      setBagFilled(false);
+    } else if (cart.length > 0) {
+      setBagFilled(!bagFilled);
+    }
+  };
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -39,14 +47,17 @@ const RouteSwitch = () => {
       newShoppingCart.push(itemAddedToCart);
     }
     setCart(newShoppingCart);
+    checkBagQuantity();
   };
 
   const removeFromCart = (productToDelete) => {
     setCart([...cart.filter((product) => product !== productToDelete)]);
+    checkBagQuantity();
   };
 
   const clearCart = () => {
     setCart([]);
+    checkBagQuantity();
   };
 
   const subTotal = () => {
@@ -93,6 +104,7 @@ const RouteSwitch = () => {
           setQuantity,
           increaseQuantity,
           decrement,
+          bagFilled,
         }}
       >
         <Routes>

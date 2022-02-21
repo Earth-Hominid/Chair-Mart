@@ -31,3 +31,27 @@ it('renders logo link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 ```
+
+## Aha moments
+
+I was using useEffect, with an empty [], when trying to dynamically update the shopping cart icon and the cart product page.
+
+When the cart is empty, the icon should be just show a bag and the cart product page needs to show 'cart is empty'. When the user adds a product to the cart or clears the cart, the bag icon needs to show the quatity of items in the cart, and the cart page needs to show the products.
+
+Using useEffect, only showed the updated values when I clicked refresh on the page.
+
+In order to get the values to appear immediately, I made functions which updated the state, I added these into useContext, and called these changes whenever a button was clicked.
+
+```js
+const [bagFilled, setBagFilled] = useState();
+
+const checkBagQuantity = () => {
+  if (cart.length <= 0) {
+    setBagFilled(false);
+  } else if (cart.length > 0) {
+    setBagFilled(!bagFilled);
+  }
+};
+```
+
+I added the checkBagQuantity() inside any functions that dealt with either adding or removing products from the cart. This allowed my cart icon, and cart page to dynamically render whenever a product was added or removed, or the cart was cleared.

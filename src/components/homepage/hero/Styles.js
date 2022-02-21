@@ -4,7 +4,7 @@ export const Hero = styled.div`
   display: flex;
   align-items: center;
   min-height: 20rem;
-  background-color: #FAE8E0;
+  background-color: #fff7f0;
   justify-content: center;
   }
 `;
@@ -31,15 +31,15 @@ export const PromotionLeftSquare = styled.div`
   display: flex;
   justify-content: space-around;
   @media (min-width: 1rem) {
-    background-color: #f4b9b8;
+    background-color: #ffe0c3;
     margin-top: 1.5rem;
   }
   @media (min-width: 48rem) {
-    background-color: #f4b9b8;
+    background-color: #ffe0c3;
     margin: 1rem;
   }
   @media (min-width: 65.5rem) {
-    background-color: #f4b9b8;
+    background-color: #ffe0c3;
     margin: 1rem;
     min-width: 25rem;
   }
@@ -53,16 +53,16 @@ export const PromotionRightSquare = styled.div`
   display: flex;
   justify-content: space-around;
   @media (min-width: 20rem) {
-    background-color: #f4b9b8;
+    background-color: #ffe0c3;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
   @media (min-width: 48rem) {
-    background-color: #f4b9b8;
+    background-color: #ffe0c3;
     margin: 1rem;
   }
   @media (min-width: 65.5rem) {
-    background-color: #f4b9b8;
+    background-color: #ffe0c3;
     margin: 1rem;
     min-width: 25rem;
   }

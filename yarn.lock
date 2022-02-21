@@ -3894,6 +3894,11 @@
     "language-tags" "^1.0.5"
     "minimatch" "^3.0.4"
 
+"eslint-plugin-react-hooks@^4.2.1-rc.0-next-419ccc2b1-20220217":
+  "integrity" "sha512-ZbOuKcIW0oNle66FfNCXn9H33blFqwmCfINoGAf4rk+PUcvtk5lvFDjpKOKcBj3AG61DJZqau8thLV8a6fw8Gg=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.2.1-rc.0-next-419ccc2b1-20220217.tgz"
+  "version" "4.2.1-rc.0-next-419ccc2b1-20220217"
+
 "eslint-plugin-react-hooks@^4.3.0":
   "integrity" "sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz"

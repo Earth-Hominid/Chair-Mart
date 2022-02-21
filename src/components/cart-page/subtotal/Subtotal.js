@@ -34,7 +34,7 @@ const Subtotal = () => {
             <SubtotalTextContainer>
               <SubtotalTitle>Subtotal:</SubtotalTitle>
               {cart.length > 0 ? (
-                <div className="total__cost">{`$${subTotal()}.00 USD`}</div>
+                <SubtotalValue>{`$${subTotal()}.00 USD`}</SubtotalValue>
               ) : (
                 ''
               )}

@@ -8,21 +8,7 @@ import {
 } from './Styles.js';
 
 const OrderSummary = () => {
-  const [empty, setEmpty] = useState(true);
-
-  const { cart } = useContext(UserCart);
-
-  const isCartEmpty = () => {
-    if (cart.length <= 0) {
-      setEmpty(true);
-    } else if (cart.length > 0) {
-      setEmpty(false);
-    }
-  };
-
-  useEffect(() => {
-    isCartEmpty();
-  }, []);
+  const { cart, bagFilled } = useContext(UserCart);
 
   const EmptyOrderSummary = () => {
     return (
@@ -37,7 +23,7 @@ const OrderSummary = () => {
   return (
     <>
       <SummaryContainer>
-        {empty ? <EmptyOrderSummary /> : <ProductSummary cart={cart} />}
+        {!bagFilled ? <EmptyOrderSummary /> : <ProductSummary cart={cart} />}
       </SummaryContainer>
     </>
   );
