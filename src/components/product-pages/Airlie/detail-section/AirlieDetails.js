@@ -19,7 +19,7 @@ import {
   FavoriteButton,
   ProductDescriptionContainer,
   ProductDescription,
-} from '../../Styles';
+} from './Styles';
 import chairProducts from '../../../../utils/chairProducts';
 const AirlieDetails = () => {
   const [favorite, setFavorite] = useState(false);

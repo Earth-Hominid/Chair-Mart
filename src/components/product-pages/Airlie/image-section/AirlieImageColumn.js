@@ -6,7 +6,7 @@ import {
   MainProductImage,
   SecondaryImageGroup,
   SecondaryImageColumn,
-} from '../../Styles';
+} from './Styles';
 
 const AirlieImageColumn = () => {
   return (
