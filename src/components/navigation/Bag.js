@@ -5,7 +5,7 @@ import BagIcon from '../../assets/images/icons/navbar/Bag.svg';
 import { StyledBagIcon, StyledBagContainer } from './Navigation.styles';
 
 const Bag = () => {
-  const { checkQuantity } = useContext(UserCart);
+  const { checkBagQuantity } = useContext(UserCart);
 
   const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const Bag = () => {
 
   const goToCart = () => {
     routeChange();
-    checkQuantity();
+    checkBagQuantity();
   };
 
   return (

@@ -1,5 +1,5 @@
-import AirlieImageColumn from '../image-section/AirlieImageColumn';
-import AirlieDetails from '../detail-section/AirlieDetails';
+import ImageColumn from '../image-section/ImageColumn';
+import Details from '../detail-section/Details';
 import { ProductPageSection, ProductPageRow } from './Styles';
 
 const AirlieSection = () => {
@@ -7,8 +7,8 @@ const AirlieSection = () => {
     <>
       <ProductPageSection>
         <ProductPageRow>
-          <AirlieImageColumn />
-          <AirlieDetails />
+          <ImageColumn />
+          <Details />
         </ProductPageRow>
       </ProductPageSection>
     </>

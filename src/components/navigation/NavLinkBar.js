@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect, useCallback } from 'react';
+import { useContext } from 'react';
 import { UserCart } from '../../context/UserCart';
 import Search from './Search';
 import LogIn from './LogIn';

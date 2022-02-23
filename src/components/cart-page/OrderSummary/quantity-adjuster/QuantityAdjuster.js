@@ -10,7 +10,7 @@ import {
 } from './Styles';
 
 const QuantityAdjuster = ({ product }) => {
-  const { quantity, setQuantity } = useContext(UserCart);
+  const { setQuantity } = useContext(UserCart);
 
   const onChangeHandler = (event) => {
     setQuantity(product, parseInt(Math.round(Number(event.target.value))));
@@ -27,7 +27,7 @@ const QuantityAdjuster = ({ product }) => {
     if (product.quantity <= 0) {
       return;
     }
-    setQuantity(product, product.quantity + 1);
+    setQuantity(product, parseInt(product.quantity + 1));
   };
 
   return (
@@ -36,7 +36,7 @@ const QuantityAdjuster = ({ product }) => {
         <QuantityIcon src={minusIcon} alt="minus-icon"></QuantityIcon>
       </QuantityButton>
       <QuantityInput
-        type="number"
+        type="tel"
         name="quantity"
         onChange={onChangeHandler}
         value={product.quantity}

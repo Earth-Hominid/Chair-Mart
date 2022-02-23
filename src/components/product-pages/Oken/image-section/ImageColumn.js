@@ -8,25 +8,28 @@ import {
   SecondaryImageColumn,
 } from './Styles';
 
-const AirlieImageColumn = () => {
+const ImageColumn = () => {
   return (
     <>
       <MainImageColumn>
         <MainImageContainer>
-          <MainProductImage src={chairProducts[0].image} alt="Airlie Sofa" />
+          <MainProductImage
+            src={chairProducts[7].image}
+            alt={chairProducts[7].name}
+          />
         </MainImageContainer>
         <SecondaryImageGroup>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageTwo}
-              alt="Airle chair"
+              src={chairProducts[7].imageTwo}
+              alt={chairProducts[7].name}
               width="100%"
             />
           </SecondaryImageColumn>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageThree}
-              alt=" Airliechair"
+              src={chairProducts[7].imageThree}
+              alt={chairProducts[7].name}
               width="100%"
             />
           </SecondaryImageColumn>
@@ -34,15 +37,15 @@ const AirlieImageColumn = () => {
         <SecondaryImageGroup>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageFour}
-              alt=" Airliechair"
+              src={chairProducts[7].imageFour}
+              alt={chairProducts[7].name}
               width="100%"
             />
           </SecondaryImageColumn>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageFive}
-              alt=" Airliechair"
+              src={chairProducts[7].imageFive}
+              alt={chairProducts[7].name}
               width="100%"
             />
           </SecondaryImageColumn>
@@ -52,4 +55,4 @@ const AirlieImageColumn = () => {
   );
 };
 
-export default AirlieImageColumn;
+export default ImageColumn;
