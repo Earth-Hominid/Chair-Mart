@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { useContext } from 'react';
+import { useState, useContext } from 'react';
 import { UserCart } from '../../../../context/UserCart';
+import { useNavigate } from 'react-router-dom';
 import QuantityAdjuster from '../quantity-adjuster/QuantityAdjuster';
 import BlankFavorite from '../../../../assets/images/icons/fav.png';
 import Favorite from '../../../../assets/images/icons/fav-color.png';
@@ -26,11 +26,22 @@ import DimensionSection from '../materials/DimensionSection';
 
 const Details = () => {
   const [favorite, setFavorite] = useState(false);
-
-  const { cart, setCart } = useContext(UserCart);
+  const [quantity, setQuantity] = useState(1);
+  const { addToBag, onInputChange } = useContext(UserCart);
 
   const handleFavoriteClick = () => {
     setFavorite(!favorite);
+  };
+
+  const handleIncreaseClick = () => {
+    setQuantity((quantity) => parseInt(quantity + 1));
+  };
+
+  const handleDecreaseClick = () => {
+    if (quantity <= 1) return;
+    if (quantity > 1) {
+      setQuantity((quantity) => parseInt(quantity - 1));
+    }
   };
 
   return (
@@ -41,14 +52,20 @@ const Details = () => {
         <ProductSubtitle>Color</ProductSubtitle>
         <ColorContainer>
           <ColorButton> {chairProducts[1].color}</ColorButton>
-          <SecondaryColorButton>
-            {chairProducts[1].colorTwo}
-          </SecondaryColorButton>
         </ColorContainer>
         <ProductSubtitle>Quantity</ProductSubtitle>
-        <QuantityAdjuster />
+        <QuantityAdjuster
+          onChange={onInputChange}
+          inputValue={quantity}
+          handleDecreaseClick={handleDecreaseClick}
+          handleIncreaseClick={handleIncreaseClick}
+        />
         <ButtonContainer>
-          <AddToBagButton>Add to bag</AddToBagButton>
+          <AddToBagButton
+            onClick={() => addToBag(chairProducts[1], `${quantity}`)}
+          >
+            Add to bag
+          </AddToBagButton>
           <FavoriteButton onClick={handleFavoriteClick}>
             {favorite ? (
               <img src={Favorite} alt="favorite" />
