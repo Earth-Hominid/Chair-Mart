@@ -1,10 +1,12 @@
 import Logo from '../../../assets/images/logo/chair-mart-yellow.jpg';
 
+import { Header, CheckoutLogo } from './Styles';
+
 const LogoBanner = () => {
   return (
-    <div className="checkout__header">
-      <img className="checkout__logo" src={Logo} alt="RedeBs logo" />
-    </div>
+    <Header>
+      <CheckoutLogo src={Logo} alt="Chair-Mart logo" />
+    </Header>
   );
 };
 

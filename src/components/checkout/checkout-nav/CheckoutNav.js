@@ -11,9 +11,7 @@ const CheckoutNav = () => {
   return (
     <CheckoutNavigation>
       <Link to="/cart">
-        <div>
-          <CheckoutBackArrow src={BackArrow} alt="back-arrow" />
-        </div>
+        <CheckoutBackArrow src={BackArrow} alt="back-arrow" />
       </Link>
       <Link to="/cart">
         <StyledLink>

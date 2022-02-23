@@ -6,8 +6,8 @@ const Checkout = () => {
   return (
     <>
       <CheckoutNav />
-      {/* <LogoBanner />
-      <OrderSummary /> */}
+      <LogoBanner />
+      {/* <OrderSummary />  */}
     </>
   );
 };
