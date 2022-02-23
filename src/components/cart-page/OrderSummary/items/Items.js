@@ -4,7 +4,7 @@ import { UserCart } from '../../../../context/UserCart';
 import Item from './Item.js';
 
 const Items = () => {
-  const { cart, removeFromCart } = useContext(UserCart);
+  const { cart, removeFromCart, productSubtotal } = useContext(UserCart);
 
   return (
     <>
@@ -14,6 +14,7 @@ const Items = () => {
             key={index}
             product={product}
             onClick={() => removeFromCart(product)}
+            productSubtotal={productSubtotal}
           />
         </div>
       ))}

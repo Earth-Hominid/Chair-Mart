@@ -85,6 +85,13 @@ const RouteSwitch = () => {
     return cart.reduce((sum, { price, quantity }) => sum + price * quantity, 0);
   };
 
+  const productSubtotal = (product) => {
+    let productToAdd = cart.find((item) => product.id === item.id);
+    let quantity = productToAdd.quantity;
+    let price = productToAdd.price;
+    return price * quantity;
+  };
+
   const totalQuantity = useCallback(() => {
     return cart.reduce((sum, { quantity }) => sum + quantity, 0);
   }, [cart]);
@@ -136,6 +143,7 @@ const RouteSwitch = () => {
           bagFilled,
           checkBagQuantity,
           addToBag,
+          productSubtotal,
         }}
       >
         <Routes>

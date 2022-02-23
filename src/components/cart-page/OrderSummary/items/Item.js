@@ -12,7 +12,7 @@ import {
   AdjusterContainer,
 } from './Styles';
 
-const Item = ({ product, onClick }) => {
+const Item = ({ product, onClick, productSubtotal }) => {
   return (
     <CartProductContainer>
       <NavLink to={`/${product.name}`}>
@@ -35,6 +35,7 @@ const Item = ({ product, onClick }) => {
         <QuantityAdjuster product={product} />
         <DeleteButton onClick={onClick} />
       </AdjusterContainer>
+      <h1>{`$${productSubtotal(product)}`}</h1>
     </CartProductContainer>
   );
 };
