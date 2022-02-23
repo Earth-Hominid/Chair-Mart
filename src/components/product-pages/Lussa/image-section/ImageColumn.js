@@ -14,22 +14,22 @@ const ImageColumn = () => {
       <MainImageColumn>
         <MainImageContainer>
           <MainProductImage
-            src={chairProducts[0].image}
-            alt={chairProducts[0].name}
+            src={chairProducts[6].image}
+            alt={chairProducts[6].name}
           />
         </MainImageContainer>
         <SecondaryImageGroup>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageTwo}
-              alt={chairProducts[0].name}
+              src={chairProducts[6].imageTwo}
+              alt={chairProducts[6].name}
               width="100%"
             />
           </SecondaryImageColumn>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageThree}
-              alt={chairProducts[0].name}
+              src={chairProducts[6].imageThree}
+              alt={chairProducts[6].name}
               width="100%"
             />
           </SecondaryImageColumn>
@@ -37,15 +37,15 @@ const ImageColumn = () => {
         <SecondaryImageGroup>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageFour}
-              alt={chairProducts[0].name}
+              src={chairProducts[6].imageFour}
+              alt={chairProducts[6].name}
               width="100%"
             />
           </SecondaryImageColumn>
           <SecondaryImageColumn>
             <img
-              src={chairProducts[0].imageFive}
-              alt={chairProducts[0].name}
+              src={chairProducts[6].imageFive}
+              alt={chairProducts[6].name}
               width="100%"
             />
           </SecondaryImageColumn>

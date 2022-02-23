@@ -8,6 +8,14 @@ import Cart from './CartPage';
 import Landing from './LandingPage';
 import AirliePage from './AirliePage';
 import EvonPage from './EvonPage';
+import HendrickPage from './HendrickPage';
+import EptriPage from './EptriPage';
+import KallanPage from './KallanPage';
+import FilipPage from './FilipPage';
+import LussaPage from './LussaPage';
+import OkenPage from './OkenPage';
+import RaholtPage from './RaholtPage';
+import BendtPage from './BendtPage';
 import NotFound from './NotFound';
 import WithNav from '../outlet/WithNav';
 import WithOutNav from '../outlet/WithOutNav';
@@ -140,6 +148,14 @@ const RouteSwitch = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/airlie" element={<AirliePage />} />
             <Route path="/evon" element={<EvonPage />} />
+            <Route path="/hendrick" element={<HendrickPage />} />
+            <Route path="/eptri" element={<EptriPage />} />
+            <Route path="/kallan" element={<KallanPage />} />
+            <Route path="/filip" element={<FilipPage />} />
+            <Route path="/lussa" element={<LussaPage />} />
+            <Route path="/oken" element={<OkenPage />} />
+            <Route path="/raholt" element={<RaholtPage />} />
+            <Route path="/bendt" element={<BendtPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
