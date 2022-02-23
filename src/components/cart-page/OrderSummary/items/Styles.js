@@ -26,9 +26,8 @@ export const CartProductBackground = styled.div`
 `;
 
 export const CartProductImage = styled.img`
-  width: auto;
-  height: 4rem;
-  padding: 0.3rem;
+  width: 7rem;
+  height: auto;
 `;
 
 export const TextContainer = styled.div`
