@@ -7,7 +7,7 @@ const Checkout = () => {
     <>
       <CheckoutNav />
       <LogoBanner />
-      {/* <OrderSummary />  */}
+      <OrderSummary />
     </>
   );
 };

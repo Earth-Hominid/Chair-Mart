@@ -1,10 +1,24 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { UserCart } from '../../../context/UserCart';
 import Cart from '../../../assets/images/icons/checkout/cart.png';
 import UpArrow from '../../../assets/images/icons/checkout/up-blue.png';
 import DownArrow from '../../../assets/images/icons/checkout/down-blue.png';
 
-const OrderSummary = ({}) => {
+import {
+  AccordianContainer,
+  CartImage,
+  StyledSummary,
+  TitleContainer,
+  Title,
+  ArrowIcon,
+  TotalOrder,
+  AccordianContent,
+} from './Styles';
+
+const OrderSummary = () => {
   const [accordianOpen, setAccordianOpen] = useState(false);
+
+  const { cart, subTotal } = useContext(UserCart);
 
   const handleAccordianClick = () => {
     setAccordianOpen(!accordianOpen);
@@ -12,34 +26,26 @@ const OrderSummary = ({}) => {
 
   return (
     <>
-      <div className="order__accordian">
+      <AccordianContainer>
         <details>
-          <summary className="order__summary" onClick={handleAccordianClick}>
-            <img className="cart__icon" src={Cart} alt="cart-icon" />
+          <StyledSummary onClick={handleAccordianClick}>
+            <CartImage src={Cart} alt="cart-icon" />
             {accordianOpen ? (
-              <div className="order__title__container">
-                <h2 className="order__summary__title">Show Order Summary</h2>
-                <img
-                  src={UpArrow}
-                  alt="up-arrow"
-                  className="blue__arrow__icon"
-                />
-              </div>
+              <TitleContainer>
+                <Title>Show Order Summary</Title>
+                <ArrowIcon src={DownArrow} alt="up-arrow" />
+              </TitleContainer>
             ) : (
-              <div className="order__title__container">
-                <h2 className="order__summary__title">Hide Order Summary </h2>
-                <img
-                  src={DownArrow}
-                  alt="down-arrow"
-                  className="blue__arrow__icon"
-                />
-              </div>
+              <TitleContainer>
+                <Title>Hide Order Summary </Title>
+                <ArrowIcon src={UpArrow} alt="down-arrow" />
+              </TitleContainer>
             )}
-            <div className="order__total__amount">$420.00</div>
-          </summary>
-          <div className="accordian__content"></div>
+            <TotalOrder>{`$${subTotal()}.00`}</TotalOrder>
+          </StyledSummary>
+          <AccordianContent></AccordianContent>
         </details>
-      </div>
+      </AccordianContainer>
     </>
   );
 };

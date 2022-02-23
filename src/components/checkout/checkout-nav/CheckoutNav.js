@@ -5,7 +5,7 @@ import {
   CheckoutBackArrow,
   StyledLink,
   StyledLogoText,
-} from '../order-summary/Styles';
+} from './Styles';
 
 const CheckoutNav = () => {
   return (
