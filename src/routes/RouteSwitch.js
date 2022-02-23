@@ -7,6 +7,7 @@ import Checkout from './CheckoutPage';
 import Cart from './CartPage';
 import Landing from './LandingPage';
 import AirliePage from './AirliePage';
+import EvonPage from './EvonPage';
 import NotFound from './NotFound';
 import WithNav from '../outlet/WithNav';
 import WithOutNav from '../outlet/WithOutNav';
@@ -41,6 +42,24 @@ const RouteSwitch = () => {
       newShoppingCart.push(itemAddedToCart);
     }
     setCart(newShoppingCart);
+    checkBagQuantity();
+  };
+
+  const addToBag = (product, quantity) => {
+    let addedFruitQuantity = quantity;
+    let newCart = [...cart];
+    let addedFruit = newCart.find((item) => product.name === item.name);
+
+    if (addedFruit) {
+      addedFruit.quantity = parseInt(addedFruitQuantity);
+    } else {
+      addedFruit = {
+        ...product,
+        quantity: parseInt(addedFruitQuantity),
+      };
+      newCart.push(addedFruit);
+    }
+    setCart(newCart);
     checkBagQuantity();
   };
 
@@ -108,6 +127,7 @@ const RouteSwitch = () => {
           decrement,
           bagFilled,
           checkBagQuantity,
+          addToBag,
         }}
       >
         <Routes>
@@ -119,6 +139,7 @@ const RouteSwitch = () => {
             <Route path="/landing" element={<Landing />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/airlie" element={<AirliePage />} />
+            <Route path="/evon" element={<EvonPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

@@ -1,6 +1,6 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
+import { useContext } from 'react';
 import { UserCart } from '../../../../context/UserCart';
-import { useNavigate } from 'react-router-dom';
 import QuantityAdjuster from '../quantity-adjuster/QuantityAdjuster';
 import BlankFavorite from '../../../../assets/images/icons/fav.png';
 import Favorite from '../../../../assets/images/icons/fav-color.png';
@@ -23,23 +23,11 @@ import chairProducts from '../../../../utils/chairProducts';
 import MaterialSection from '../materials/Materials';
 import FinishSection from '../materials/FinishSection';
 import DimensionSection from '../materials/DimensionSection';
-const AirlieDetails = () => {
+
+const Details = () => {
   const [favorite, setFavorite] = useState(false);
 
   const { cart, setCart } = useContext(UserCart);
-
-  const navigate = useNavigate();
-
-  const routeChange = () => {
-    let path = `/Checkout`;
-    navigate(path);
-  };
-
-  const buyNow = () => {
-    const product = chairProducts[0];
-    setCart([...cart, { product: product, product_quantity: 1 }]);
-    routeChange();
-  };
 
   const handleFavoriteClick = () => {
     setFavorite(!favorite);
@@ -48,17 +36,17 @@ const AirlieDetails = () => {
   return (
     <>
       <ProductDetailsContainer>
-        <ProductTitle>{chairProducts[0].name}</ProductTitle>
-        <ProductPrice>{chairProducts[0].amount}</ProductPrice>
+        <ProductTitle>{chairProducts[1].name}</ProductTitle>
+        <ProductPrice>{chairProducts[1].amount}</ProductPrice>
         <ProductSubtitle>Color</ProductSubtitle>
         <ColorContainer>
-          <ColorButton> {chairProducts[0].color}</ColorButton>
+          <ColorButton> {chairProducts[1].color}</ColorButton>
           <SecondaryColorButton>
-            {chairProducts[0].colorTwo}
+            {chairProducts[1].colorTwo}
           </SecondaryColorButton>
         </ColorContainer>
         <ProductSubtitle>Quantity</ProductSubtitle>
-        <QuantityAdjuster product={cart[0]} />
+        <QuantityAdjuster />
         <ButtonContainer>
           <AddToBagButton>Add to bag</AddToBagButton>
           <FavoriteButton onClick={handleFavoriteClick}>
@@ -70,11 +58,11 @@ const AirlieDetails = () => {
           </FavoriteButton>
         </ButtonContainer>
         <ButtonContainer>
-          <BuyNowButton onClick={() => buyNow()}>Buy it now </BuyNowButton>
+          <BuyNowButton>Buy it now </BuyNowButton>
         </ButtonContainer>
         <ProductDescriptionContainer>
           <ProductDescription>
-            {chairProducts[0].description}
+            {chairProducts[1].description}
           </ProductDescription>
         </ProductDescriptionContainer>
         <MaterialSection />
@@ -85,4 +73,4 @@ const AirlieDetails = () => {
   );
 };
 
-export default AirlieDetails;
+export default Details;

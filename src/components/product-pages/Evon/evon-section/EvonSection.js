@@ -2,7 +2,7 @@ import ImageColumn from '../image-section/ImageColumn';
 import Details from '../detail-section/Details';
 import { ProductPageSection, ProductPageRow } from './Styles';
 
-const AirlieSection = () => {
+const EvonSection = () => {
   return (
     <>
       <ProductPageSection>
@@ -15,4 +15,4 @@ const AirlieSection = () => {
   );
 };
 
-export default AirlieSection;
+export default EvonSection;
