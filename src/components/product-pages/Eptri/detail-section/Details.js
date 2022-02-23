@@ -52,9 +52,6 @@ const Details = () => {
         <ProductSubtitle>Color</ProductSubtitle>
         <ColorContainer>
           <ColorButton> {chairProducts[3].color}</ColorButton>
-          <SecondaryColorButton>
-            {chairProducts[3].colorTwo}
-          </SecondaryColorButton>
         </ColorContainer>
         <ProductSubtitle>Quantity</ProductSubtitle>
         <QuantityAdjuster

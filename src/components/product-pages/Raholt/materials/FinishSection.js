@@ -34,7 +34,7 @@ const FinishSection = () => {
             )}
           </AccordianSummary>
           <AccordianContent>
-            <AccordianText>{chairProducts[0].finish}</AccordianText>
+            <AccordianText>{chairProducts[8].finish}</AccordianText>
           </AccordianContent>
         </details>
       </AccordianNoBorderContainer>

@@ -42,8 +42,8 @@ export const ColorContainer = styled.div`
 `;
 
 export const ColorButton = styled.button`
-  color: #ffffff;
-  background-color: #121212;
+  color: white;
+  background-color: black;
   font-weight: 400;
   line-height: 0.875rem;
   margin: 0.7rem 0.5rem 0.2rem 0;
@@ -55,6 +55,8 @@ export const ColorButton = styled.button`
 `;
 
 export const SecondaryColorButton = styled.button`
+  color: black;
+  background: #ffffff;
   border: 0.1rem solid black;
   border-radius: 4rem;
   margin: 0.7rem 0.5rem 0.2rem 0;
@@ -64,7 +66,6 @@ export const SecondaryColorButton = styled.button`
   line-height: 0.875rem;
   text-align: center;
   transition: border var(--duration-short) ease;
-  background-color: #ffffff;
 `;
 
 export const ButtonContainer = styled.div`
@@ -95,15 +96,16 @@ export const AddToBagButton = styled.button`
 
 export const BuyNowButton = styled.button`
   background-color: black;
+  color: white;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   min-height: 2.875rem;
   width: 100%;
   font-size: 0.938rem;
+  font-weight: 600;
   font-stretch: 100%;
   letter-spacing: 0.1rem;
-  color: white;
   line-height: 1.125rem;
   padding: 1em 2em;
   transition: background 0.2s ease-in-out;

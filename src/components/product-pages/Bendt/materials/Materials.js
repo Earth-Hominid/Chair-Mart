@@ -34,7 +34,7 @@ const MaterialSection = () => {
             )}
           </AccordianSummary>
           <AccordianContent>
-            <AccordianText>{chairProducts[0].materials}</AccordianText>
+            <AccordianText>{chairProducts[9].materials}</AccordianText>
           </AccordianContent>
         </details>
       </AccordianContainer>
