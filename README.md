@@ -27,7 +27,7 @@ npm start
 
 ## Testing
 
-Unit tests were built with Jest. s
+Unit tests were built with Jest.
 
 Learned: React-Router 6 relies on React context to work, thus, when testing components that use Router components (such as Link, Route,useNavigate etc.), you need to wrap your test component in one of the Router components.
 
