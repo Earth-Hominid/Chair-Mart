@@ -53,7 +53,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const CheckOutButton = styled.button`
-  background-color: black;
+  background-color: #f5f459;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -63,12 +63,12 @@ export const CheckOutButton = styled.button`
   font-weight: 600;
   font-stretch: 100%;
   letter-spacing: 0.1rem;
-  color: white;
+  color: black;
   line-height: 1.125rem;
   padding: 1em 2em;
   transition: background 0.2s ease-in-out;
   &:hover {
-    background-color: #f5f459;
-    color: black;
+    background-color: black;
+    color: white;
   }
 `;
