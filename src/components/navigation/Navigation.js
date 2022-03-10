@@ -8,7 +8,7 @@ import React from 'react';
 const Navigation = () => {
   return (
     <StyledNav>
-      <Link to="/">
+      <Link to="/chair-mart">
         <Logo />
       </Link>
       <NavLinkBar />
