@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chair-mart/static/css/main.7f4559b2.css",
-    "main.js": "/chair-mart/static/js/main.aa004e1a.js",
+    "main.js": "/chair-mart/static/js/main.e70a4aea.js",
     "static/media/hendrick-5.png": "/chair-mart/static/media/hendrick-5.efb0439d77947828ec83.png",
     "static/media/chair-mart-yellow.jpg": "/chair-mart/static/media/chair-mart-yellow.76b92025e1a7762ea4c0.jpg",
     "static/media/hendrick-4.png": "/chair-mart/static/media/hendrick-4.23b64e7b197dc4d0480d.png",
@@ -73,10 +73,10 @@
     "static/media/Log-in.svg": "/chair-mart/static/media/Log-in.7f6e285b9063fb55d2ec74f3742fae49.svg",
     "static/media/Search.svg": "/chair-mart/static/media/Search.34f69d862ce45a835eada6fc1614c6b4.svg",
     "main.7f4559b2.css.map": "/chair-mart/static/css/main.7f4559b2.css.map",
-    "main.aa004e1a.js.map": "/chair-mart/static/js/main.aa004e1a.js.map"
+    "main.e70a4aea.js.map": "/chair-mart/static/js/main.e70a4aea.js.map"
   },
   "entrypoints": [
     "static/css/main.7f4559b2.css",
-    "static/js/main.aa004e1a.js"
+    "static/js/main.e70a4aea.js"
   ]
 }
