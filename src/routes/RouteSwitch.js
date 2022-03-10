@@ -151,7 +151,7 @@ const RouteSwitch = () => {
             <Route path="/Checkout" element={<Checkout />} />
           </Route>
           <Route element={<WithNav />}>
-            <Route path="/" element={<Homepage />} />
+            <Route path="/chair-mart" element={<Homepage />} />
             <Route path="/landing" element={<Landing />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/airlie" element={<AirliePage />} />
