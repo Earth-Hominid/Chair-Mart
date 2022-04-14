@@ -2,7 +2,7 @@
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
-An furniture store mock-up featuring a shopping-cart. The app is built with React and utilizes both the React-Router and the React Testing Library. Unit tests were created with Jest. React Styled-Components were implemented for the CSS.
+A furniture store mock-up featuring a shopping-cart. The app is built with React and utilizes both the React-Router and the React Testing Library. Unit tests were created with Jest. React Styled-Components were implemented for the CSS.
 
 The live version can be found [here](https://earth-hominid.github.io/chair-mart/).
 
