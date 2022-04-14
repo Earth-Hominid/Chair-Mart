@@ -161,7 +161,7 @@ const checkBagQuantity = () => {
 };
 ```
 
-I added the checkBagQuantity() inside any functions that dealt with either adding or removing products from the cart. This allowed my cart icon, and cart page to dynamically render whenever a product was added or removed, or the cart was cleared.
+I added the checkBagQuantity() inside the functions which dealt with either adding or removing products from the cart. This allowed my cart icon and cart page to dynamically render whenever a product was added or removed, or the cart was cleared.
 
 ## License
 
