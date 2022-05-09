@@ -10,11 +10,17 @@ The live version can be found [here](https://earth-hominid.github.io/chair-mart/
 
 The idea for this project is taken from **The Odin Project | Full Stack [Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/shopping-cart)**.
 
+<img width="1412" alt="Screen Shot 2022-05-09 at 6 05 29 PM" src="https://user-images.githubusercontent.com/66766688/167499079-8cc63396-60d2-4d69-be0f-1d159804e01a.png">
+
 ## Features
 
 - Written with modern React, functional components with hooks
 - Simple React state managment, (no usage of redux, mobx etc)
 - Simple project structure, easy to understand
+
+<img width="1389" alt="add-to-cart" src="https://user-images.githubusercontent.com/66766688/167499171-e344dc6d-834a-4667-8fc1-2c8e18b45897.png">
+
+<img width="1409" alt="detail" src="https://user-images.githubusercontent.com/66766688/167499144-b1874201-9ac0-407a-b4ff-f64b9517020b.png">
 
 ### Install
 
