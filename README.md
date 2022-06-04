@@ -35,7 +35,7 @@ npm start
 
 Unit tests were built with Jest.
 
-Learned: React-Router 6 relies on React context to work, thus, when testing components that use Router components (such as Link, Route,useNavigate etc.), you need to wrap your test component in one of the Router components.
+Learned: React-Router 6 relies on React context to work, thus, when testing components that use Router components (such as Link, Route, useNavigate etc.), you need to wrap your test component in one of the Router components.
 
 I used BrowserRouter in my RouteSwitch file, thus, my unit tests require:
 
@@ -61,7 +61,7 @@ it('renders logo link', () => {
 
 One technique I learned was being able to simply insert the Navigation Component above the Router paths, and the navigation bar would be added to all of the pages.
 
-Pior to this, I built all of the pages with Navigation bar being imported into the component page:
+Pior to this, I built all of the pages with the Navigation bar being imported into the component page:
 
 ```js
 import Nav from '../../navigation/Nav';
@@ -149,7 +149,7 @@ return (
 
 I was using useEffect, with an empty [], when trying to dynamically update the shopping cart icon and the cart product page.
 
-When the cart is empty, the icon should be just show a bag and the cart product page needs to show 'cart is empty'. When the user adds a product to the cart or clears the cart, the bag icon needs to show the quatity of items in the cart, and the cart page needs to show the products.
+When the cart is empty, the icon should only show a bag and the cart product page needs to show 'cart is empty'. When the user adds a product to the cart or clears the cart, the bag icon needs to show the quantity of items in the cart, and the cart page needs to show the products.
 
 Using useEffect, only showed the updated values when I clicked refresh on the page.
 
