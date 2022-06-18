@@ -4,7 +4,7 @@
 
 A furniture store mock-up featuring a shopping-cart. The app is built with React and utilizes both the React-Router and the React Testing Library. Unit tests were created with Jest. React Styled-Components were implemented for the CSS.
 
-The live version can be found [here](https://earth-hominid.github.io/chair-mart/).
+The live version can be found [here](https://earth-hominid.github.io/Chair-Mart/).
 
 ## Description
 
