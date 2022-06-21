@@ -11,7 +11,6 @@ import {
   ProductSubtitle,
   ColorContainer,
   ColorButton,
-  SecondaryColorButton,
   ButtonContainer,
   AddToBagButton,
   BuyNowButton,
@@ -28,6 +27,19 @@ const Details = () => {
   const [favorite, setFavorite] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const { addToBag, onInputChange } = useContext(UserCart);
+
+  const navigate = useNavigate();
+  const { checkBagQuantity } = useContext(UserCart);
+
+  const routeChange = () => {
+    let path = `/cart`;
+    navigate(path);
+  };
+
+  const goToCart = () => {
+    routeChange();
+    checkBagQuantity();
+  };
 
   const handleFavoriteClick = () => {
     setFavorite(!favorite);
@@ -75,7 +87,7 @@ const Details = () => {
           </FavoriteButton>
         </ButtonContainer>
         <ButtonContainer>
-          <BuyNowButton>Buy it now </BuyNowButton>
+          <BuyNowButton onClick={goToCart}>Check out</BuyNowButton>
         </ButtonContainer>
         <ProductDescriptionContainer>
           <ProductDescription>
