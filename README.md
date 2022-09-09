@@ -6,10 +6,6 @@ A furniture store mock-up featuring a shopping-cart. The app is built with React
 
 The live version can be found [here](https://earth-hominid.github.io/Chair-Mart/).
 
-## Description
-
-The idea for this project is taken from **The Odin Project | Full Stack [Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/shopping-cart)**.
-
 <img width="1412" alt="Screen Shot 2022-05-09 at 6 05 29 PM" src="https://user-images.githubusercontent.com/66766688/167499079-8cc63396-60d2-4d69-be0f-1d159804e01a.png">
 
 ## Features
